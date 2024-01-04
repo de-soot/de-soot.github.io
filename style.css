@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
 }
 
 .navbar {
@@ -9,6 +8,7 @@ body {
     overflow: hidden;
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .navbar li {
@@ -17,7 +17,6 @@ body {
 
 .navbar a {
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     display: block;
@@ -36,7 +35,6 @@ body {
     display: none;
     cursor: pointer;
     padding: 14px 16px;
-    text-align: center;
     color: white;
 }
 
