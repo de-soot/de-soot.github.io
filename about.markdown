@@ -1,18 +1,15 @@
 ---
 layout: page
-title: about
-permalink: /about
+title: about me
+permalink: /about-me
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+i am a student in the [kaplan singapore][kaplan] university pursuing their [murdoch bachelor of information technology in artificial intelligence and autonomous systems and computer science][murdoch degree].
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+as of right now, i still have to finish kaplan's foundation and foundational diploma courses before i can enroll in their bachelor's degree program, so in the meantime i will practice practical skills and consolidate my knowledge by making some [personal projects][home] on the side outside of school.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+i will document these projects in the form of short [blog posts][home] explaining the projects details. i hope that they can provide some educational value for people like me who are interested in technology.
 
-
-[jekyll-organization]: https://github.com/jekyll
+[home]: /
+[kaplan]: https://www.kaplan.com.sg
+[murdoch degree]: https://www.kaplan.com.sg/bachelors-degree/bachelor-of-information-technology-in-artificial-intelligence-and-autonomous-systems-and-computer-science-double-major
