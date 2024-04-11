@@ -2,7 +2,7 @@
 
 just a place on the internet where i write blog posts about my projects
 
-## how to visit this website (if it is deployed)
+## how to visit this website online (if it is deployed)
 
 easy, just do either one of these things:
 1) just click **[here][link]** or
