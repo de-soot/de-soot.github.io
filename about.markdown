@@ -4,11 +4,11 @@ title: about me
 permalink: /about-me
 ---
 
-i am a student in the **[kaplan singapore][kaplan]** university pursuing their [murdoch bachelor of information technology in artificial intelligence and autonomous systems and computer science degree][degree].
+i am a  **[kaplan singapore][kaplan]** student pursuing a [Bachelor of Information Technology in Artificial Intelligence and Autonomous Systems and Computer Science degree][degree].
 
-as of right now, i still have yet to finish kaplan's foundation and foundational diploma courses and i need to do that before i can enroll in their bachelor's degree program, so in the meantime i will make some personal projects to practice useful practical skills outside of school and consolidate my knowledge of the material learnt in school.
+my personal projects will be documented in the form of these **[blog posts][home]** on this website. the blogs will explain the projects' details, and i hope that they provide educational value for people interested in technology and AI. 🤓
 
-i will document these projects in the form of short **[blog posts][home]** explaining the projects details. i hope that they can provide some educational value for people like me who are interested in technology (*a.k.a nerds* 🤓).
+i may also occassionally write about my other interests, such as math concepts / formulas i found my teachers did not explain in class (which forced me to come up with explainations myself).
 
 [home]: /
 [kaplan]: https://www.kaplan.com.sg
