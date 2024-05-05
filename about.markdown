@@ -4,9 +4,11 @@ title: about me
 permalink: /about-me
 ---
 
-i am a student in the **[kaplan singapore][kaplan]** university pursuing a [Bachelor of Information Technology in Artificial Intelligence and Autonomous Systems and Computer Science degree][degree].
+i am a  **[kaplan singapore][kaplan]** student pursuing a [Bachelor of Information Technology in Artificial Intelligence and Autonomous Systems and Computer Science degree][degree].
 
-my personal projects will be showcased in the form of **[blog posts][home]** which explain the projects' details. i hope that they can provide some educational value for people like me who are interested in technology and A.I. 🤓
+my personal projects will be documented in the form of these **[blog posts][home]** on this website. the blogs will explain the projects' details, and i hope that they provide educational value for people interested in technology and AI. 🤓
+
+i may also occassionally write about my other interests, such as math concepts / formulas i found my teachers did not explain in class (which forced me to come up with explainations myself).
 
 [home]: /
 [kaplan]: https://www.kaplan.com.sg
