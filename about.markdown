@@ -1,7 +1,7 @@
 ---
 layout: page
-title: about me
-permalink: /about-me
+title: about
+permalink: /about
 ---
 
 i am a  [kaplan singapore][kaplan] student pursuing a [Bachelor of Information Technology in Artificial Intelligence and Autonomous Systems and Computer Science (Double Major) from Murdoch University][degree].
