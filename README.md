@@ -17,6 +17,6 @@ a bit harder, but still relatively simple enough, just:
 1) download a copy of the github repository's files onto your computer.
 1) follow the guide to install the prerequisites for jekyll: [https://jekyllrb.com/docs/installation][docs-link]
 2) once all requirements are installed, run this in your terminal: `gem install jekyll bundler`
-3) now that everything's installed and good to go, use `cd` to navigate to the folder where the you downloaded the copy of the github repository and type and enter this into the terminal: `jekyll serve`
+3) now that everything's installed and you are good to go, use `cd` to navigate to the folder where the you downloaded the copy of the github repository and type and enter this into the terminal: `jekyll serve`
 4) ...
 5) profit!
