@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "you can comment now"
+title: You can comment now
 date: 2024-05-24 20:28:03 +0800
 categories: comments
+permalink: /added-commenting
 ---
 
 i added the commenting feature on the blog posts using [giscus][giscus]. it basically uses [github discussions][discussions-docs] for comments since this website is hosted on [github pages][pages-docs] and that only supports static websites, which cannot use normal databases for comments.
