@@ -1,6 +1,6 @@
 # My Personal Website
 
-A place on the internet where i write blog posts about my projects
+A place on the internet where i write blog posts about my projects.
 
 ## Visit Website Online
 
