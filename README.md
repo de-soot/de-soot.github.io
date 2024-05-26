@@ -1,14 +1,14 @@
-# My personal website
+# My Personal Website
 
 A place on the internet where i write blog posts about my projects
 
-## How to visit this website online (if it is deployed)
+## Visit Website Online
 
 Just click [here][link]
 
 [link]: https://de-soot.github.io
 
-## Local development
+## Local Development
 
 1) Download a copy of the github repository's files onto your computer.
 1) Follow the guide to install the prerequisites for jekyll: [https://jekyllrb.com/docs/installation][docs-link]
