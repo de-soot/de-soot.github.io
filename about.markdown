@@ -1,23 +1,26 @@
 ---
 layout: page
-title: about
+title: About
 permalink: /about
 ---
 
-hi there, i am a [kaplan singapore][kaplan] student pursuing the "[Bachelor of Information Technology in Artificial Intelligence and Autonomous Systems and Computer Science (Double Major)][degree]" from Murdoch University (quite a mouthful, i know).
+# Hi there!
 
-this is where [blog posts][home] of my projects are stored. it is made using [jekyll][jekyll]'s [minima][minima] theme and is hosted for free on [github][github].
+I am Wei Chen and this is my personal website.
 
-my personal projects will be documented in the form of these [blog posts][home] on this website. the blogs will explain the projects' details, and i hope that they provide educational value for people interested in technology and AI.
+I am a student studying for  [Bachelor's degree][degree] in computer science and artifical intelligence at [Kaplan Singapore][kaplan] (degree awarded by Murdoch University).
 
-i also write about my other interests or things i learn about in class on these blogs.
+this is where my projects are hosted and documented in the form of [blogs][blog]. it is made using [Jekyll][jekyll]'s [minima][minima] theme and is hosted for free on [Github Pages][pages].
 
 the `source code` for this website can be found on its [github repository][github repo].
 
-[home]: /
+You can find me on Linkedin [here][linkedin].
+
+[blog]: /blogs
 [kaplan]: https://www.kaplan.com.sg
 [degree]: https://www.kaplan.com.sg/bachelors-degree/bachelor-of-information-technology-in-artificial-intelligence-and-autonomous-systems-and-computer-science-double-major
 [jekyll]: https://jekyllrb.com/
 [minima]: https://github.com/jekyll/minima
-[github]: https://github.com
+[pages]: https://pages.github.com
 [github repo]: https://github.com/de-soot/de-soot.github.io
+[linkedin]: https://www.linkedin.com/in/wong-wei-chen

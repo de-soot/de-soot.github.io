@@ -21,7 +21,7 @@
 title: de_soot
 email: de.soot@proton.me
 description: hosted on github pages
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blogs" # the subpath of your site, e.g. /blog
 url: "https://de-soot.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  de-soot
 
