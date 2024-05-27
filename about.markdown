@@ -10,9 +10,9 @@ I am Wei Chen and this is my personal website.
 
 I am a student studying for  [Bachelor's degree][degree] in computer science and artifical intelligence at [Kaplan Singapore][kaplan] (degree awarded by Murdoch University).
 
-this is where my projects are hosted and documented in the form of [blogs][blog]. it is made using [Jekyll][jekyll]'s [minima][minima] theme and is hosted for free on [Github Pages][pages].
+This is where my projects are hosted and documented in the form of [blogs][blog]. It is made using [Jekyll][jekyll]'s [minima][minima] theme and is hosted for free on [Github Pages][pages].
 
-the `source code` for this website can be found on its [github repository][github repo].
+The `source code` for this website can be found on its [github repository][github repo].
 
 You can find me on Linkedin [here][linkedin].
 
