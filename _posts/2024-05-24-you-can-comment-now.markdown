@@ -6,9 +6,9 @@ categories: comments
 permalink: /added-commenting
 ---
 
-I added the commenting feature on the blog posts using [giscus][giscus]. It basically uses [github discussions][discussions-docs] for comments since this website is hosted on [github pages][pages-docs] and that only supports static websites, which cannot use normal databases for comments.
+I added the commenting feature on the blog posts using [giscus][giscus]. It basically uses [Github Discussions][discussions-docs] for comments since this website is hosted on [Github Pages][pages-docs] and that only supports static websites, which cannot use normal databases for comments.
 
-You can try it out yourself by signing into your github account and commenting below, or you can comment on the [github discussions][discussions] directly.
+You can try it out yourself by signing into your github account and commenting below, or you can comment on the repository's [Github Discussions][discussions] directly.
 
 [giscus]: https://giscus.app
 [discussions]: https://github.com/de-soot/de-soot.github.io/discussions
