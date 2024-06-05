@@ -1,5 +1,5 @@
 ---
-layout: layout.html
+layout: post
 title: You Can Comment Now
 date: 2024-05-24 20:28:03 +0800
 categories: comments, giscus
