@@ -2,13 +2,13 @@
 
 A place on the internet where I write blog posts about my projects.
 
-## Visit Website Online
+## Visit Online
 
 Just click [here][link]
 
 [link]: https://de-soot.github.io
 
-## Local Development
+## Run Locally
 
 1) Download a copy of the github repository's files onto your computer.
 1) Follow the guide to install the prerequisites for Jekyll: [https://jekyllrb.com/docs/installation][docs-link].
