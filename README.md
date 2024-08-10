@@ -1,6 +1,6 @@
 # About
 
-A place on the internet where I write and host my projects.
+A place on the internet where I write about my projects and host some live demos / video demonstrations if any.
 
 # Usage
 ## Visit Online
