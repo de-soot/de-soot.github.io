@@ -1,13 +1,13 @@
-# About
+# de.soot.github.io
 
 A place on the internet where I write about my write about my interests, hobbies, and projects.
 
-# Usage
-## Visit Online
+## Usage
+### Visit Online
 
 Click [here](https://de-soot.github.io)
 
-## Run Locally
+### Run Locally
 
 1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer.
 2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll.
