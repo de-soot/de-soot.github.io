@@ -13,7 +13,7 @@ Click [here](https://de-soot.github.io)
 ```
 git clone https://github.com/de-soot/de-soot.github.io
 ```
-2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll.
+2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll for your system if you have not already done so.
 3) Once all requirements are installed, run the following command below in a command line terminal:
 ```
 gem install jekyll bundler
