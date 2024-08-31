@@ -9,7 +9,10 @@ Click [here](https://de-soot.github.io)
 
 ### Run Locally
 
-1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer.
+1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer by simply downloading the source code from this Github repository, or by using `git`:
+```
+git clone https://github.com/de-soot/de-soot.github.io
+```
 2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll.
 3) Once all requirements are installed, run the following command below in a command line terminal:
 ```
