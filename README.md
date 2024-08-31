@@ -1,4 +1,4 @@
-# de.soot.github.io
+# de-soot.github.io
 
 A place on the internet where I write about my write about my interests, hobbies, and projects.
 
