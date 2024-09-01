@@ -1,34 +1,32 @@
-# About
+# de-soot.github.io
 
-A place on the internet where I write and host my projects.
+A place on the internet where I write about my write about my interests, hobbies, and projects.
 
-# Visit Online
+## Usage
+### Visit Online
 
 Click [here](https://de-soot.github.io)
 
-# Run Locally
+### Run Locally
 
-1) Download a copy of the github repository onto your computer and extract the compressed `zip` archive to a folder.
-2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll.
+1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer by simply downloading the source code from this Github repository, or by using [`git`](https://git-scm.com):
+```
+git clone https://github.com/de-soot/de-soot.github.io
+```
+2) Follow [this guide](https://jekyllrb.com/docs/installation) to install the prerequisites for Jekyll for your system if you have not already done so.
 3) Once all requirements are installed, run the following command below in a command line terminal:
-
 ```
 gem install jekyll bundler
 ```
-
 4) Now that everything's installed and good to go, navigate the terminal to the directory where the you downloaded the copy of the Github repository, like so:
-
 ```
 cd "{Path of source code folder}"
 ```
-
 5) Enter this command:
-
 ```
 bundle exec jekyll serve
 ```
-
 6) Navigate to http://localhost:4000 in a browser.
 7) Profit!
 
-Refer to the [official Jekyll documentation](https://jekyllrb.com/docs) for more information about installing Jekyll.
+Refer to the [official Jekyll documentation](https://jekyllrb.com/docs) for more information regarding installing and running Jekyll.
