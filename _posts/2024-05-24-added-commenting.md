@@ -6,7 +6,7 @@ categories: comments, giscus
 permalink: /added-commenting
 ---
 
-I added the commenting feature on the blog posts using [giscus][giscus]. Basically, it uses [Github Discussions][discussions-docs] to store comments instead of storing it in its own database on the web server. Since this website is hosted on [Github Pages][pages-docs] and Pages only supports static websites - which cannot host their own databases to store things such as comments.
+I added the commenting feature on the blog posts using [giscus][giscus]. Basically, it uses [Github Discussions][discussions-docs] to store comments instead of storing it in its own database on the web server. Since this website is hosted on [Github Pages][pages-docs] and Pages only supports static websites, it cannot host its own databases to store things such as comments.
 
 You can try it out yourself by signing into your github account and commenting below, or you can comment on the repository's [Github Discussions][discussions] directly and it will show up on the comments section on the website similarly.
 
