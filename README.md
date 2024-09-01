@@ -9,7 +9,7 @@ Click [here](https://de-soot.github.io)
 
 ### Run Locally
 
-1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer by simply downloading the source code from this Github repository, or by using `git`:
+1) [Clone](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) this github repository onto your computer by simply downloading the source code from this Github repository, or by using [`git`](https://git-scm.com):
 ```
 git clone https://github.com/de-soot/de-soot.github.io
 ```
