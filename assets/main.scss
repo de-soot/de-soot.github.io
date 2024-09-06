@@ -8,3 +8,10 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #eee;
+  }
+}
