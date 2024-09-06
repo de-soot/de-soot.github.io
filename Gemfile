@@ -33,3 +33,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Automatically add sitemap
 gem "jekyll-sitemap", "~> 1.4"
+
+# Protect email from scrapper bots 
+gem "jekyll-email-protect", "~> 1.1"
