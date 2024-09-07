@@ -21,7 +21,7 @@ You can test it out yourself in the comments on blog post below by signing into 
 ---
 
 # Note
-Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page's metadata without editting the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion, hence giscus will create a new Github Discussion
+Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page's title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the `<script>`'s `data-strict` attribute value to `"1"`), and hence Giscus will create a new Github Discussion.
 
 [giscus]: https://giscus.app
 [discussions]: https://github.com/de-soot/de-soot.github.io/discussions
