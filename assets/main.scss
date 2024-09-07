@@ -4,14 +4,46 @@
 @import "minima";
 
 body {
-  hyphens: auto;
-  text-align: justify;
-  text-justify: inter-word;
+  background-color: hsl(0, 0, 98);
+  font-family     : serif;
+  hyphens         : auto;
+  text-align      : justify;
+}
+
+h1 {
+  color: hsl(0, 0, 5)
+}
+
+h2 {
+  color: hsl(0, 0, 10)
+}
+
+h3 {
+  color: hsl(0, 0, 15)
+}
+
+p {
+  color: hsl(0, 0, 20)
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #111;
-    color: #fdfdfd;
+    background-color: hsl(0, 0, 15);
+  }
+
+  h1 {
+    color: hsl(0, 0, 95)
+  }
+
+  h2 {
+    color: hsl(0, 0, 90)
+  }
+
+  h3 {
+    color: hsl(0, 0, 85)
+  }
+
+  p {
+    color: hsl(0, 0, 80)
   }
 }
