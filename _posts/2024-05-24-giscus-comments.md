@@ -23,7 +23,8 @@ You can test it out yourself in the comments on blog post below by signing into 
 # Note
 Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page's title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the `<script>`'s `data-strict` attribute value to `"1"`), and hence Giscus will create a new Github Discussion.
 
-Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet, than if your post already has comments and its own Discussion.
+Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet rather than when your post already has comments in its own Discussion and you have to manually copy across those changes.
+
 [giscus]: https://giscus.app
 [discussions]: https://github.com/de-soot/de-soot.github.io/discussions
 [discussions-docs]: https://docs.github.com/en/discussions
