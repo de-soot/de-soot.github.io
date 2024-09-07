@@ -40,4 +40,4 @@ Chris Noxz's [noxz.tech][noxz], which renders static HTML from [`groff`][groff].
 
 [noxz]: https://noxz.tech
 [groff]: https://www.gnu.org/software/groff
-[hypehnopoly]: https://mnater.github.io/Hyphenopoly
+[hyphenopoly]: https://mnater.github.io/Hyphenopoly
