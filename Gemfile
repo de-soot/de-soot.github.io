@@ -15,13 +15,10 @@ gem "minima", "~> 2.5"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  # Automatically add RSS feed.xml
   gem "jekyll-feed", "~> 0.12"
-
-  # Automatically add sitemap
+  # Automatically add sitemap.xml
   gem "jekyll-sitemap", "~> 1.4"
-
-  # Protect email from scrapper bots 
-  gem "jekyll-email-protect", "~> 1.1"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

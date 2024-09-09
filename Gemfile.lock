@@ -131,7 +131,6 @@ GEM
       rouge (>= 2.0, < 5.0)
     jekyll-default-layout (0.1.5)
       jekyll (>= 3.0, < 5.0)
-    jekyll-email-protect (1.1.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -280,7 +279,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 232)
   http_parser.rb (~> 0.6.0)
-  jekyll-email-protect (~> 1.1)
   jekyll-feed (~> 0.12)
   jekyll-sitemap (~> 1.4)
   minima (~> 2.5)
