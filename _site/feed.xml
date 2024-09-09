@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-09T21:41:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Dark Mode on Websites with CSS @media Queries</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode on Websites with CSS @media Queries" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<h1 id="why-dark-mode">Why Dark Mode</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-09T22:54:17+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Dark Mode on Websites with CSS @media Queries</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode on Websites with CSS @media Queries" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<h1 id="why-dark-mode">Why Dark Mode</h1>
+
 <p>For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>.</p>
 
+<p><img src="https://zerowidthjoiner.net/uploads/2020/04-11/light-vs-dark.png" alt="Comparison image of light theme on the left and dark theme on the right." /></p>
+
 <h1 id="how-to-do-it">How to do it</h1>
+
 <p>From <a href="https://developer.mozilla.org/en-US">MDN Web Docs</a>:</p>
 <blockquote>
   <p>The @media <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">at-rule</a> can be used to apply part of a <a href="https://en.wikipedia.org/wiki/Style_sheet_(web_development)">style sheet</a> based on the result of one or more media queries. With it, you specify a media query and a block of CSS to apply to the document if and only if the media query matches the device on which the content is being used.</p>
 </blockquote>
 
 <h2 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h2>
+
 <h3 id="external-style-sheet">External Style Sheet</h3>
+
 <p>In your HTML document, you can either link an external CSS style sheet in your <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> if you wish to separate your code out more:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- something resembling this --&gt;</span>
@@ -35,6 +41,7 @@
 </code></pre></div></div>
 
 <h3 id="with-the-style-html-tag">With the &lt;style&gt; HTML tag</h3>
+
 <p>You can also type out your CSS code in between <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tags if you prefer everything to be contained in one HTML document:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- something like this --&gt;</span>
@@ -60,6 +67,7 @@
 <p>There also exists a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube on how to do this similarly</a> if you prefer to follow along with a video or if you find reading this blog-style guide boring becuase Tiktok and Instagram Reels have fried your zoomer ADHD brain beyond repair.</p>
 
 <h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
+
 <p>It is a little bit less straightforward to do this with a static site generator like Jekyll (which has native support with Github Pages and is what this website uses) or Hugo as you have to override the theme’s CSS style sheet.</p>
 
 <p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file and after which you should get something that resembles this:</p>
@@ -87,12 +95,14 @@
 
 <p>For other static-site-generator generated websites, you can refer to the official documentation found online for information on how to override your theme’s CSS.</p>
 
-<h1 id="why-not-use-a-toggleable-button-instead">Why Not Use a Toggleable Button Instead</h1>
+<h1 id="why-not-use-a-toggleable-button-instead-rant-warning">Why Not Use a Toggleable Button Instead (Rant Warning)</h1>
+
 <p>Rather than defaulting to light or dark mode and having a separate button (that uses Javascript) for the user to manually switch to their preferred theme, it might be better to automatically default to what they already set their browser’s preferred theme to. This is so they do not get flashbanged by their monitors at night if your website defaults to light theme and they open their browser to your website for the first time, or without toggling it to dark mode the last time they visited, or just simply because your website does not store cookies about their previously toggled theme either due to your lack of know how, respect for user privacy, or plain laziness.</p>
 
 <p>You can also include the button to toggle themes on the website alongside if you like having more buttons on your website for showing off your Javascript skills to potential employers (I know the tech job market out there is rough for fresh grads right now) or just want to follow the current web trend on including more and more unnecessary Javascript bloat on websites with features that can be done easily with simple HTML and CSS.</p>
 
 <h1 id="configure-giscus-theme">Configure Giscus Theme</h1>
+
 <p>To set it to match your website (if you have done the CSS <code class="language-plaintext highlighter-rouge">@media</code> trick shown above), simply set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-theme</code> attribute value to <code class="language-plaintext highlighter-rouge">"preferred_color_scheme"</code> as shown below.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://giscus.app/client.js"</span>
@@ -109,9 +119,22 @@
 <p>Read more on adding Giscus comments to your website at <a href="https://de-soot.github.io/giscus-comments">my previous blog post about it</a>.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="websites" /><summary type="html"><![CDATA[Why Dark Mode For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in dark mode.]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="http://localhost:4000/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/justify-text</id><content type="html" xml:base="http://localhost:4000/justify-text"><![CDATA[<p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.</p>
+</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="websites" /><summary type="html"><![CDATA[Why Dark Mode]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="http://localhost:4000/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/justify-text</id><content type="html" xml:base="http://localhost:4000/justify-text"><![CDATA[<p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.</p>
+
+<h1 id="how-to-justify">How to Justify</h1>
+
+<p>It is actually pretty simple — to justify your body text, just add this to your CSS style sheet:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+    <span class="err">...</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This will justify your text so it all aligns neatly in a block-like shape.</p>
 
 <h1 id="how-to-hyphenate">How to Hyphenate</h1>
+
 <p>Though there is a way to do this with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, hyphenation already has built-in functionality in CSS and it is widely supported by browsers, so it is a no-brainer to do it the CSS way, unless your target audience has a <code class="language-plaintext highlighter-rouge">user-agent</code> that does not support CSS’ <code class="language-plaintext highlighter-rouge">hyphens</code> property for some reason.</p>
 
 <p>To add hyphenation to your body text, simply add the <code class="language-plaintext highlighter-rouge">hyphens</code> property to your body section in your CSS style sheet and set it to <code class="language-plaintext highlighter-rouge">auto</code>, like so:</p>
@@ -122,18 +145,18 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h1 id="how-to-justify">How to Justify</h1>
-<p>Great! So now your text wraps words using hyphens, but there is still jaggedness on the right due to your text not being aligned properly. To fix this, we can use the <code class="language-plaintext highlighter-rouge">text-align</code> property and set it to <code class="language-plaintext highlighter-rouge">justify</code>, like this:</p>
+<p>So now your text wraps words using hyphens, but why do we need to use hyphens when we can make blocks of text by just justifying?</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-    <span class="err">...</span>
-    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<h1 id="why-hyphenate">Why Hyphenate</h1>
 
-<p>This will justify your text so it all aligns neatly.</p>
+<p>Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out whitespace in between words — which can create or worsen an often undesirable effect commonly referred to as ‘rivers of white,’ which are known to trip up dyslexic readers, making your writing less accessible as a result.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect." /></p>
+
+<p>This is also a highly-cited reason as to why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on browsers and on the web.</p>
 
 <h1 id="other-blogs-that-justify">Other Blogs That Justify</h1>
+
 <p>Here are a list of other blogsites that I know of that use justified text:</p>
 <ul>
   <li>Chris Noxz’s <a href="https://noxz.tech">noxz.tech</a>, which renders static HTML from <a href="https://www.gnu.org/software/groff"><code class="language-plaintext highlighter-rouge">groff</code></a>.</li>
@@ -144,9 +167,11 @@
 </ul>]]></content><author><name></name></author><category term="justify," /><category term="text-align," /><category term="jekyll," /><category term="css" /><summary type="html"><![CDATA[You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.]]></summary></entry><entry><title type="html">Comments on Github Pages with Giscus</title><link href="http://localhost:4000/giscus-comments" rel="alternate" type="text/html" title="Comments on Github Pages with Giscus" /><published>2024-05-24T00:00:00+08:00</published><updated>2024-05-24T00:00:00+08:00</updated><id>http://localhost:4000/giscus-comments</id><content type="html" xml:base="http://localhost:4000/giscus-comments"><![CDATA[<p>I added a commenting feature for the blog using <a href="https://giscus.app">giscus</a>. Basically, it uses <a href="https://docs.github.com/en/discussions">Github Discussions</a> to store comments instead of storing it in its own database on the web server. Since this website is hosted on <a href="https://docs.github.com/en/pages">Github Pages</a> and Pages only supports static websites, it cannot host its own databases to store things such as comments.</p>
 
 <h1 id="try-it">Try it</h1>
+
 <p>You can test it out yourself in the comments on blog post below by signing into your github account and commenting, or you can comment on the repository’s Github Discussions directly and it will show up on the comments section on the website similarly.</p>
 
 <h1 id="add-it-to-your-own-github-pages-website">Add it to your own Github Pages website</h1>
+
 <p>1) Make sure to enable Github Discussions on your website’s Github repository.</p>
 
 <p>2) Navigate to <code class="language-plaintext highlighter-rouge">giscus.app</code> on your browser’s address bar and follow the instructions under the “Configuration” section to configure your <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag attribute values.</p>
@@ -156,6 +181,7 @@
 <hr />
 
 <h1 id="note">Note</h1>
+
 <p>Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page’s title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-strict</code> attribute value to <code class="language-plaintext highlighter-rouge">"1"</code>), and hence Giscus will create a new Github Discussion.</p>
 
 <p>Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet rather than when your post already has comments in its own Discussion and you have to manually copy across those changes.</p>

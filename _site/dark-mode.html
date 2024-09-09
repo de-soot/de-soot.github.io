@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Dark Mode on Websites with CSS @media Queries" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Why Dark Mode For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in dark mode." />
-<meta property="og:description" content="Why Dark Mode For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in dark mode." />
+<meta name="description" content="Why Dark Mode" />
+<meta property="og:description" content="Why Dark Mode" />
 <link rel="canonical" href="http://localhost:4000/dark-mode" />
 <meta property="og:url" content="http://localhost:4000/dark-mode" />
 <meta property="og:site_name" content="de_soot" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dark Mode on Websites with CSS @media Queries" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"Why Dark Mode For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in dark mode.","headline":"Dark Mode on Websites with CSS @media Queries","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dark-mode"},"url":"http://localhost:4000/dark-mode"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"Why Dark Mode","headline":"Dark Mode on Websites with CSS @media Queries","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dark-mode"},"url":"http://localhost:4000/dark-mode"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="de_soot" /></head>
 <body><header class="site-header" role="banner">
@@ -48,16 +48,22 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="why-dark-mode">Why Dark Mode</h1>
+
 <p>For users visiting your website in a dark room or at night, it is often less straining for the eyes if your webpage to be displayed in <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a>.</p>
 
+<p><img src="https://zerowidthjoiner.net/uploads/2020/04-11/light-vs-dark.png" alt="Comparison image of light theme on the left and dark theme on the right." /></p>
+
 <h1 id="how-to-do-it">How to do it</h1>
+
 <p>From <a href="https://developer.mozilla.org/en-US">MDN Web Docs</a>:</p>
 <blockquote>
   <p>The @media <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">at-rule</a> can be used to apply part of a <a href="https://en.wikipedia.org/wiki/Style_sheet_(web_development)">style sheet</a> based on the result of one or more media queries. With it, you specify a media query and a block of CSS to apply to the document if and only if the media query matches the device on which the content is being used.</p>
 </blockquote>
 
 <h2 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h2>
+
 <h3 id="external-style-sheet">External Style Sheet</h3>
+
 <p>In your HTML document, you can either link an external CSS style sheet in your <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> if you wish to separate your code out more:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- something resembling this --&gt;</span>
@@ -84,6 +90,7 @@
 </code></pre></div></div>
 
 <h3 id="with-the-style-html-tag">With the &lt;style&gt; HTML tag</h3>
+
 <p>You can also type out your CSS code in between <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tags if you prefer everything to be contained in one HTML document:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- something like this --&gt;</span>
@@ -109,6 +116,7 @@
 <p>There also exists a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube on how to do this similarly</a> if you prefer to follow along with a video or if you find reading this blog-style guide boring becuase Tiktok and Instagram Reels have fried your zoomer ADHD brain beyond repair.</p>
 
 <h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
+
 <p>It is a little bit less straightforward to do this with a static site generator like Jekyll (which has native support with Github Pages and is what this website uses) or Hugo as you have to override the theme’s CSS style sheet.</p>
 
 <p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file and after which you should get something that resembles this:</p>
@@ -136,12 +144,14 @@
 
 <p>For other static-site-generator generated websites, you can refer to the official documentation found online for information on how to override your theme’s CSS.</p>
 
-<h1 id="why-not-use-a-toggleable-button-instead">Why Not Use a Toggleable Button Instead</h1>
+<h1 id="why-not-use-a-toggleable-button-instead-rant-warning">Why Not Use a Toggleable Button Instead (Rant Warning)</h1>
+
 <p>Rather than defaulting to light or dark mode and having a separate button (that uses Javascript) for the user to manually switch to their preferred theme, it might be better to automatically default to what they already set their browser’s preferred theme to. This is so they do not get flashbanged by their monitors at night if your website defaults to light theme and they open their browser to your website for the first time, or without toggling it to dark mode the last time they visited, or just simply because your website does not store cookies about their previously toggled theme either due to your lack of know how, respect for user privacy, or plain laziness.</p>
 
 <p>You can also include the button to toggle themes on the website alongside if you like having more buttons on your website for showing off your Javascript skills to potential employers (I know the tech job market out there is rough for fresh grads right now) or just want to follow the current web trend on including more and more unnecessary Javascript bloat on websites with features that can be done easily with simple HTML and CSS.</p>
 
 <h1 id="configure-giscus-theme">Configure Giscus Theme</h1>
+
 <p>To set it to match your website (if you have done the CSS <code class="language-plaintext highlighter-rouge">@media</code> trick shown above), simply set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-theme</code> attribute value to <code class="language-plaintext highlighter-rouge">"preferred_color_scheme"</code> as shown below.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://giscus.app/client.js"</span>
