@@ -49,7 +49,20 @@
   <div class="post-content e-content" itemprop="articleBody">
     <p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.</p>
 
+<h1 id="how-to-justify">How to Justify</h1>
+
+<p>It is actually pretty simple — to justify your body text, just add this to your CSS style sheet:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+    <span class="err">...</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This will justify your text so it all aligns neatly in a block-like shape.</p>
+
 <h1 id="how-to-hyphenate">How to Hyphenate</h1>
+
 <p>Though there is a way to do this with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, hyphenation already has built-in functionality in CSS and it is widely supported by browsers, so it is a no-brainer to do it the CSS way, unless your target audience has a <code class="language-plaintext highlighter-rouge">user-agent</code> that does not support CSS’ <code class="language-plaintext highlighter-rouge">hyphens</code> property for some reason.</p>
 
 <p>To add hyphenation to your body text, simply add the <code class="language-plaintext highlighter-rouge">hyphens</code> property to your body section in your CSS style sheet and set it to <code class="language-plaintext highlighter-rouge">auto</code>, like so:</p>
@@ -60,18 +73,18 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h1 id="how-to-justify">How to Justify</h1>
-<p>Great! So now your text wraps words using hyphens, but there is still jaggedness on the right due to your text not being aligned properly. To fix this, we can use the <code class="language-plaintext highlighter-rouge">text-align</code> property and set it to <code class="language-plaintext highlighter-rouge">justify</code>, like this:</p>
+<p>So now your text wraps words using hyphens, but why do we need to use hyphens when we can make blocks of text by just justifying?</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-    <span class="err">...</span>
-    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<h1 id="why-hyphenate">Why Hyphenate</h1>
 
-<p>This will justify your text so it all aligns neatly.</p>
+<p>Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out whitespace in between words — which can create or worsen an often undesirable effect commonly referred to as ‘rivers of white,’ which are known to trip up dyslexic readers, making your writing less accessible as a result.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect." /></p>
+
+<p>This is also a highly-cited reason as to why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on browsers and on the web.</p>
 
 <h1 id="other-blogs-that-justify">Other Blogs That Justify</h1>
+
 <p>Here are a list of other blogsites that I know of that use justified text:</p>
 <ul>
   <li>Chris Noxz’s <a href="https://noxz.tech">noxz.tech</a>, which renders static HTML from <a href="https://www.gnu.org/software/groff"><code class="language-plaintext highlighter-rouge">groff</code></a>.</li>

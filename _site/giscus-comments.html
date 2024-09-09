@@ -50,9 +50,11 @@
     <p>I added a commenting feature for the blog using <a href="https://giscus.app">giscus</a>. Basically, it uses <a href="https://docs.github.com/en/discussions">Github Discussions</a> to store comments instead of storing it in its own database on the web server. Since this website is hosted on <a href="https://docs.github.com/en/pages">Github Pages</a> and Pages only supports static websites, it cannot host its own databases to store things such as comments.</p>
 
 <h1 id="try-it">Try it</h1>
+
 <p>You can test it out yourself in the comments on blog post below by signing into your github account and commenting, or you can comment on the repository’s Github Discussions directly and it will show up on the comments section on the website similarly.</p>
 
 <h1 id="add-it-to-your-own-github-pages-website">Add it to your own Github Pages website</h1>
+
 <p>1) Make sure to enable Github Discussions on your website’s Github repository.</p>
 
 <p>2) Navigate to <code class="language-plaintext highlighter-rouge">giscus.app</code> on your browser’s address bar and follow the instructions under the “Configuration” section to configure your <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag attribute values.</p>
@@ -62,6 +64,7 @@
 <hr />
 
 <h1 id="note">Note</h1>
+
 <p>Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page’s title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-strict</code> attribute value to <code class="language-plaintext highlighter-rouge">"1"</code>), and hence Giscus will create a new Github Discussion.</p>
 
 <p>Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet rather than when your post already has comments in its own Discussion and you have to manually copy across those changes.</p>
