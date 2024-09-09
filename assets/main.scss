@@ -5,25 +5,29 @@
 
 body {
   background-color: hsl(0, 0, 98);
-  font-family     : serif;
-  hyphens         : auto;
-  text-align      : justify;
+}
+
+h1, h2, h3, p, ol, ul {
+  font-family : serif;
 }
 
 h1 {
-  color: hsl(0, 0, 5)
+  color: hsl(0, 0, 5);
 }
 
 h2 {
-  color: hsl(0, 0, 10)
+  color: hsl(0, 0, 10);
 }
 
 h3 {
-  color: hsl(0, 0, 15)
+  color: hsl(0, 0, 15);
 }
 
-p {
-  color: hsl(0, 0, 20)
+p, ol, ul {
+  color: hsl(0, 0, 20);
+  hyphens         : auto;
+  text-align      : justify;
+  line-height     : 1.75;
 }
 
 @media (prefers-color-scheme: dark) {

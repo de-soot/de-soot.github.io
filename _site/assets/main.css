@@ -195,7 +195,9 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-body { background-color: #fafafa; font-family: serif; hyphens: auto; text-align: justify; }
+body { background-color: #fafafa; }
+
+h1, h2, h3, p, ol, ul { font-family: serif; }
 
 h1 { color: #0d0d0d; }
 
@@ -203,7 +205,7 @@ h2 { color: #1a1a1a; }
 
 h3 { color: #262626; }
 
-p { color: #333333; }
+p, ol, ul { color: #333333; hyphens: auto; text-align: justify; line-height: 1.75; }
 
 @media (prefers-color-scheme: dark) { body { background-color: #262626; }
   h1 { color: #f2f2f2; }
