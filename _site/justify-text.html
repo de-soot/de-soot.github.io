@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Justify and Hyphenate Text on Websites using CSS" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website." />
-<meta property="og:description" content="You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website." />
+<meta name="description" content="You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS." />
+<meta property="og:description" content="You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS." />
 <link rel="canonical" href="http://localhost:4000/justify-text" />
 <meta property="og:url" content="http://localhost:4000/justify-text" />
 <meta property="og:site_name" content="de_soot" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Justify and Hyphenate Text on Websites using CSS" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.","headline":"Justify and Hyphenate Text on Websites using CSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/justify-text"},"url":"http://localhost:4000/justify-text"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS.","headline":"Justify and Hyphenate Text on Websites using CSS","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/justify-text"},"url":"http://localhost:4000/justify-text"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="de_soot" /></head>
 <body><header class="site-header" role="banner">
@@ -47,41 +47,41 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because using CSS, I have justified the text on my website.</p>
+    <p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS.</p>
 
 <h1 id="how-to-justify">How to Justify</h1>
 
 <p>It is actually pretty simple — to justify your body text, just add this to your CSS style sheet:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-    <span class="err">...</span>
     <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>This will justify your text so it all aligns neatly in a block-like shape.</p>
+<p>This will justify your text so it all aligns neatly without jagged edges.</p>
 
 <h1 id="how-to-hyphenate">How to Hyphenate</h1>
 
-<p>Though there is a way to do this with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, hyphenation already has built-in functionality in CSS and it is widely supported by browsers, so it is a no-brainer to do it the CSS way, unless your target audience has a <code class="language-plaintext highlighter-rouge">user-agent</code> that does not support CSS’ <code class="language-plaintext highlighter-rouge">hyphens</code> property for some reason.</p>
+<p>Although there is a way to do this with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, hyphenation is a built-in functionality in CSS and it is widely supported by browsers.</p>
 
 <p>To add hyphenation to your body text, simply add the <code class="language-plaintext highlighter-rouge">hyphens</code> property to your body section in your CSS style sheet and set it to <code class="language-plaintext highlighter-rouge">auto</code>, like so:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
-    <span class="err">...</span>
     <span class="nl">hyphens</span><span class="p">:</span> <span class="nb">auto</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>So now your text wraps words using hyphens, but why do we need to use hyphens when we can make blocks of text by just justifying?</p>
-
 <h1 id="why-hyphenate">Why Hyphenate</h1>
 
-<p>Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out whitespace in between words — which can create or worsen an often undesirable effect commonly referred to as ‘rivers of white,’ which are known to trip up dyslexic readers, making your writing less accessible as a result.</p>
+<p>So now your text wraps words using hyphens, but why do we need to use hyphens that ruin the perfect edges that justifying makes?</p>
+
+<p>Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out the whitespace between words — which can create and worsen an undesirable effect commonly referred to as ‘rivers of white’, which is known to trip up dyslexic readers and decrease accessibility.</p>
 
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect." /></p>
 
-<p>This is also a highly-cited reason as to why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on browsers and on the web.</p>
+<p>This is also a common reason as to why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on the web.</p>
+
+<p>By hyphenating, even though it does not solve it completely, it will reduce the effect dramatically.</p>
 
 <h1 id="other-blogs-that-justify">Other Blogs That Justify</h1>
 
@@ -93,6 +93,9 @@
   <li>Public Delivery’s <a href="https://publicdelivery.org">publicdelivery.org</a>, which also justifies without hyphens.</li>
   <li>JPEG XL’s <a href="https://jpegxl.info">jpegxl.info</a>, which had fixed its un-hyphenated text.</li>
 </ul>
+
+<script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>
 
 
   </div><a class="u-url" href="/justify-text" hidden></a>
@@ -109,7 +112,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">de_soot</li><li><a class="u-email" href="mailto:de.soot@proton.me">de.soot@proton.me</a></li></ul>
+          <li class="p-name">de_soot</li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/de-soot"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">de-soot</span></a></li></ul>

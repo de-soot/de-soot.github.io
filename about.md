@@ -8,7 +8,7 @@ This is the website where I write about whatever inspires me to write in form of
 
 The `source code` for this website can be found on its [Github repository][github repo].
 
-[blog]: /blogs
+[blog]: /
 [jekyll]: https://jekyllrb.com
 [minima]: https://github.com/jekyll/minima
 [pages]: https://pages.github.com
