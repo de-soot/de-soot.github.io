@@ -8,29 +8,28 @@ body {
   font-size: 1.2rem;
 }
 
-h2, h3, p, ol, ul {
-  font-family: serif;
-}
-
 h1 {
-  color      : hsl(0, 0, 5);
+  color: hsl(0, 0, 5);
   font-family: sans-serif;
   font-weight: bold;
 }
 
 h2 {
   color: hsl(0, 0, 10);
+  font-family: sans-serif;
 }
 
 h3 {
   color: hsl(0, 0, 15);
+  font-family: sans-serif;
 }
 
 p, ol, ul {
-  color       : hsl(0, 0, 20);
-  hyphens     : auto;
-  text-align  : justify;
-  line-height : 1.75;
+  font-family: serif;
+  color      : hsl(0, 0, 20);
+  hyphens    : auto;
+  text-align : justify;
+  line-height: 1.75;
 }
 
 @media (prefers-color-scheme: dark) {
