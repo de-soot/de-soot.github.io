@@ -50,6 +50,10 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
+      - name: Clone ruby-build
+        run: git clone https://github.com/rbenv/ruby-build.git
+      - name: Install ruby-build
+        run: sudo ./ruby-build/install.sh
 
   # Deployment job
   deploy:
