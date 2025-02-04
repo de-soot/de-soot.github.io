@@ -53,6 +53,10 @@ Here are a list of other blogsites that I know of that use justified text:
 - Public Delivery's [publicdelivery.org][pubdeliver], which also justifies without hyphens.
 - JPEG XL's [jpegxl.info][jpg], which had fixed its un-hyphenated text.
 
+# Conclusion
+
+f you found this blog post useful, leave a comment down below! Also read how to add reactive dark-mode to your website in my [previous blog post](/dark-mode).
+
 [max]: https://maxwellforbes.com/posts/web-justified-text
 [jpg]: https://jpegxl.info 
 [noxz]: https://noxz.tech
