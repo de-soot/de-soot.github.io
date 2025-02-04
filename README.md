@@ -1,6 +1,6 @@
 # de-soot.github.io
 
-A place on the internet where I write about my write about my interests, hobbies, and projects.
+A place on the internet where I write about my write about things that interest me.
 
 ## Usage
 ### Visit Online
