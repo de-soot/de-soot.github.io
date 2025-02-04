@@ -3,6 +3,7 @@
 A place on the internet where I write about my write about things that interest me.
 
 ## Usage
+
 ### Visit Online
 
 Click [here](https://de-soot.github.io)
