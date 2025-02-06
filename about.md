@@ -4,7 +4,7 @@ title: About
 permalink: /about
 ---
 
-[This](/) is the website where I write about whatever I think is interesting or helpful. It is made using [Jekyll][jekyll]'s [Minima][minima] theme and is hosted for free on [Github Pages][pages].
+Welcome to my website! [This](/) is where I write about whatever I think is interesting or helpful. It is made with [Jekyll][jekyll] using the [Minima][minima] theme and is hosted for free on [Github Pages][pages].
 
 The `source code` for this website can be found on its [Github repository][github repo].
 
