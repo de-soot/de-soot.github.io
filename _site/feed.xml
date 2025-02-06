@@ -1,4 +1,471 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-06T21:01:28+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Dark Mode with CSS @media Queries</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode with CSS @media Queries" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<h1 id="why-dark-mode">Why Dark Mode</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-06T22:10:48+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-06T00:00:00+08:00</published><updated>2025-02-06T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
+
+<p><a href="/groff-apa#preface">Preface</a></p>
+
+<p><a href="/groff-apa#introduction">Introduction</a></p>
+
+<p><a href="/groff-apa#prerequisites">Prerequisites</a></p>
+
+<p><a href="/groff-apa#coverpage">Cover Page</a></p>
+
+<p><a href="/groff-apa#pagenumbering">Page Numbering</a></p>
+
+<p><a href="/groff-apa#font">Font</a></p>
+<ul>
+  <li><a href="/groff-apa#fontfamily">Font Family</a>
+    <ul>
+      <li><a href="/groff-apa#defaultfonts">Default Fonts</a></li>
+      <li><a href="/groff-apa#customfonts">Custom Fonts</a></li>
+    </ul>
+  </li>
+  <li><a href="/groff-apa#fontsize">Font Size</a></li>
+  <li><a href="/groff-apa#linespacing">Line Spacing</a></li>
+  <li><a href="/groff-apa#fontstyle">Font Style</a></li>
+</ul>
+
+<p><a href="/groff-apa#intextcitation">In-text Citation</a></p>
+<ul>
+  <li><a href="/groff-apa#parentheticalcitation">Parenthetical Citation</a></li>
+  <li><a href="/groff-apa#narrativecitation">Narrative Citation</a></li>
+</ul>
+
+<p><a href="/groff-apa#referencelist">Reference List</a></p>
+<ul>
+  <li><a href="/groff-apa#formattingtheheading">Formatting the Heading</a></li>
+  <li><a href="/groff-apa#spacebetweenentries">Space Between Entries</a></li>
+  <li><a href="/groff-apa#fieldordering">Field Ordering</a></li>
+  <li><a href="/groff-apa#punctuation">Punctuation</a>
+    <ul>
+      <li><a href="/groff-apa#authorsandsampersands">Authors, Ands &amp; Ampersands</a>
+        <ul>
+          <li><a href="/groff-apa#effectoncitations">Effect on Citations</a></li>
+        </ul>
+      </li>
+      <li><a href="/groff-apa#periodsuppression">Period Suppression</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="/groff-apa#exportingaspdf">Exporting as PDF</a></p>
+
+<h1 id="preface-">Preface <a name="preface"></a></h1>
+
+<p>Many colleges give students a mandatory class where they learn how to cite and do referencing in essays.</p>
+
+<p>For my essay, I wrote it using <a href="https://neovim.io">Neovim</a>, the same terminal text-editor I code on and write blogs for my website with, and that would not have been possible without a word processor that can compile documents from plaintext (unlike What-You-See-Is-What-You-Get (WYSIWYG) word processors, such as <a href="https://www.libreoffice.org">LibreOffice</a> <a href="https://www.libreoffice.org/discover/writer">Writer</a>). As you could tell from the title of this blog post, I used <a href="https://www.gnu.org/software/groff">groff</a> to accomplish this.</p>
+
+<p>Although some of the modifications detailed in this guide are specific to APA, you do not have to be writing in APA to find this guide helpful. Just adapt some of the specific changes made in this guide to suit your style guide.</p>
+
+<p>This blog guide mainly just serves to compile all the relevant research I had done into a simple step-by-step solution I can easily follow when I want to use groff to write essays in APA again, but it also hopes to help others who were in the same spot I was save themselves some time and frustration that I had to go through when figuring things out by myself for the first time.</p>
+
+<p>I made a <a href="https://github.com/de-soot/groff-apa">Github repository</a> as a companion to this guide. It gives an example of the final generated output so you know exactly what you are going to get out of this. The source files included in the repository have some extra comments to help readability and can also be used as a template to quickly set things up to just get started writing.</p>
+
+<p>A fun fact about this blog post: this is actually my second time writing this whole thing because I frustratingly lost the first one in the dumbest way possible. I accidentally deleted the folder containing it because I forgot that I put it in the folder. Unfortunately, it was already gone by the time I realised due to the auto-emptying routine of my Trash folder scheduled to run once every hour.</p>
+
+<h1 id="introduction-">Introduction <a name="introduction"></a></h1>
+
+<p>The <a href="https://apa.org">American Psychological Association</a> (APA) 7th Edition <a href="https://apastyle.apa.org">style guide</a> is the most popular for formatting references and citations in college-level essays (at least that was what my lecturer said when they gave out the writing assignment).</p>
+
+<p><a href="https://gnu.org">GNU</a> <a href="https://troff.org">(t)roff</a> (abbreviated as groff) is an older and more lightweight but less well-known typesetting alternative to <a href="https://www.latex-project.org">LaTeX</a> (which is popular for writing academic papers) that comes preinstalled in most <a href="https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy">GNU/Linux</a> distributions. If it was not for the massive size of a LaTeX install (&gt;2GB vs. groff’s &lt;10MB), I likely would not have used groff. groff also has a simpler syntax and compiles in an instant compared to LaTeX, which are some of the things that further convinced me to stick with groff even when I got stuck and lost at times.</p>
+
+<p>The <a href="https://www.gnu.org/software/groff/manual/groff.html.node/ms.html">ms</a> (“manuscript”) macros were the earliest and are largely seen as the “default” set of macros for writing in groff, so it should have the most documentation out of any other macro packages. That was the main reason I chose to use the it instead of other macros, as well as having already experimented with writing basic documents with ms previously.</p>
+
+<p>However, groff by itself cannot do citations and referencing out-of-the-box. Fortunately, it does come with a preprocessor called refer that does the citing and referencing for it. Although the defaults for refer do not conform to APA guidelines, it is not too complex to change those defaults to match any style guide as long as you know where to find the right things to change.</p>
+
+<h1 id="prerequisites-">Prerequisites <a name="prerequisites"></a></h1>
+
+<p>This guide assumes you are using a Unix-based system (e.g. GNU/Linux, *BSD, macOS, etc.) and already know how to write and compile basic <code class="language-plaintext highlighter-rouge">groff ms</code> documents to Portable Document Format (PDF). If not, do not worry. There are many resources online for getting started, such as Luke Smith’s videos on <a href="https://videos.lukesmith.xyz/w/eDqgKby1W4sHQGZgqZbMLe">groff</a> and <a href="https://videos.lukesmith.xyz/w/5ANbTYv7cgF69FhpAkVBwi">refer</a>. For more detail, see GNU’s official <a href="https://www.gnu.org/software/groff/manual/groff.html">manual</a> or <code class="language-plaintext highlighter-rouge">troff</code>’s <a href="https://troff.org/TheGroffFriendsHowto.pdf">HOWTO</a>.</p>
+
+<h1 id="cover-page-">Cover Page <a name="coverpage"></a></h1>
+
+<p>My assignment did not require me to include a cover page, but yours might. By default, groff puts cover page information on the same page as the essay. Luckily, the ms macros contain a convenient way to change this. Just put <a href="https://linux.die.net/man/7/groff_ms"><code class="language-plaintext highlighter-rouge">.RP no</code></a> as the first line of your document (<code class="language-plaintext highlighter-rouge">.RP</code> stands for “report”; the <code class="language-plaintext highlighter-rouge">no</code> argument tells it to not repeat the cover page information on the next page):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.RP no
+</code></pre></div></div>
+
+<p>This is also needed for the next section on page numbering.</p>
+
+<h1 id="page-numbering-">Page Numbering <a name="pagenumbering"></a></h1>
+
+<p>The first page does not have any headers (including page numbering) because groff expects it to include cover page information (i.e. the title of the paper; optionally author(s), institution(s), date, and abstract).</p>
+
+<p>If you followed the steps on the previous section on the cover page, you might be confused as to why the first page after the cover page still does not have any page numbering while the page after it starts with the page numbering of ‘2’. This is because although groff started counting page numbers on the first page after the cover page, it still suppresses the first page by default.</p>
+
+<p>When we used the <code class="language-plaintext highlighter-rouge">.RP no</code> macro to move the cover page information into its own page, we simply created a new “page 0” that groff does not know about (which is also why groff does not count it in the page numbering).</p>
+
+<p>Conveniently, is another macro to help us fix this. Place <code class="language-plaintext highlighter-rouge">.P1</code> below <code class="language-plaintext highlighter-rouge">.RP no</code> to unsuppress the first page header (page numbering):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.RP no
+.P1
+</code></pre></div></div>
+
+<p>Note that <code class="language-plaintext highlighter-rouge">.P1</code> does not work by itself without <code class="language-plaintext highlighter-rouge">.RP no</code>, likely because groff suppresses headers on any page with cover page information even if you make them empty by doing this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.TL
+.AB no
+.AE
+</code></pre></div></div>
+
+<p>which works because even though the title (<code class="language-plaintext highlighter-rouge">.TL</code>) is required, it stops at the abstract (<code class="language-plaintext highlighter-rouge">.AB</code>, which ends at <code class="language-plaintext highlighter-rouge">.AE</code>; the <code class="language-plaintext highlighter-rouge">no</code> argument suppresses the “Abstract” heading).</p>
+
+<h1 id="font-">Font <a name="font"></a></h1>
+
+<p>Many lecturers demand assignments to be submitted in double-spaced Times New Roman in 12 point size. This section covers how to change the font family, size, style, and line spacing.</p>
+
+<h2 id="font-family-">Font Family <a name="fontfamily"></a></h2>
+
+<p>By default, groff already outputs text in your <a href="https://www.gnu.org/software/groff/manual/groff.html.node/Using-Fonts.html">device’s default serif font family</a> (typically Times New Roman), but sometimes (very rarely, in my experience) lecturers prefer sans-serif or even monospace in some cases.</p>
+
+<h3 id="default-fonts-">Default Fonts <a name="defaultfonts"></a></h3>
+
+<p>Changing to another one of the default fonts in groff is simple.</p>
+
+<p>This is how to change it to device’s default <a href="https://www.gnu.org/software/groff/manual/groff.html.node/Font-Families.html">sans-serif</a>,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam H \" Helvetica
+</code></pre></div></div>
+
+<p>monospace,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam C \" Courier
+</code></pre></div></div>
+
+<p>and (back to) serif font family:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam T \" Times New Roman
+</code></pre></div></div>
+
+<p>There are many other default fonts in groff listed in <a href="https://technicallywewrite.com/2024/04/12/changefonts">this post</a>.</p>
+
+<h3 id="custom-fonts-">Custom Fonts <a name="customfonts"></a></h3>
+
+<p>Installing custom fonts for groff is a little bit trickier; I have not been able to get it to work on my device yet. I did find a <a href="https://www.port.de/cgi-bin/groff/AddingFonts">guide that seemed promising</a> though. Maybe I will revisit this if I get it working in the future.</p>
+
+<h2 id="font-size-">Font Size <a name="fontsize"></a></h2>
+
+<p>The default font size in groff is a little bit less than 12pt (<a href="https://www.gnu.org/software/groff/manual/groff.html.node/Manipulating-Type-Size-and-Vertical-Spacing.html">10pt</a>, to be exact), but it is very easy to change. Simply add this line to your plaintext document to change the font size to 12pt:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nr PS 12
+</code></pre></div></div>
+
+<p>As for what <code class="language-plaintext highlighter-rouge">PS</code> stands for, it probably means something like “Point Size”; <code class="language-plaintext highlighter-rouge">.nr</code> stands for “Number Registers”.</p>
+
+<h2 id="line-spacing-">Line Spacing <a name="linespacing"></a></h2>
+
+<p>All parts of an APA-styled paper <a href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/line-spacing">should be double-spaced</a>. By default, groff uses <a href="https://www.gnu.org/software/groff/manual/groff.html.node/Manipulating-Type-Size-and-Vertical-Spacing.html">120% of font size</a> as vertical spacing. Fortunately, changing this to double-spacing is just as simple as changing the font size: just set the vertical spacing (<code class="language-plaintext highlighter-rouge">.nr VS</code>) to double your font size (<code class="language-plaintext highlighter-rouge">.nr PS</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nr VS 24
+</code></pre></div></div>
+
+<h2 id="font-style-">Font Style <a name="fontstyle"></a></h2>
+
+<p>Here is how to make your text <strong>bold</strong>,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ft B
+</code></pre></div></div>
+
+<p><em>italicised</em>,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ft I
+</code></pre></div></div>
+
+<p>or even <strong><em>both</em></strong>!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ft BI
+</code></pre></div></div>
+
+<p>And to set it back to normal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ft R \" Stands for Regular or Roman
+</code></pre></div></div>
+
+<h1 id="in-text-citation-">In-text Citation <a name="intextcitation"></a></h1>
+
+<p>Now that everything is set up, we can start to get into the citations.</p>
+
+<p>refer uses numbered footnotes by default, but APA wants the author(s) and date included in their in-text citations. This section will cover how to do exactly as APA says.</p>
+
+<h2 id="parenthetical-citation-">Parenthetical Citation <a name="parentheticalcitation"></a></h2>
+
+<p>After some research, I found a <a href="https://preciouschicken.com/blog/posts/no-tears-references-groff">blog post “no-tears” guide</a>, 2 <a href="https://github.com/Koshkov/groff-paper-template">Github</a> <a href="https://github.com/skurtulmus/refer-styles">repositories</a>, and a post from the <a href="https://lists.gnu.org">GNU mailing list</a> (which I cannot seem to find anymore). I extracted the refer block (denoted by <code class="language-plaintext highlighter-rouge">.R1</code> and <code class="language-plaintext highlighter-rouge">.R2</code>) from all those sources and combined them to make a frankenstein that works perfectly for most APA parenthetical citations:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.R1 \" Refer block start
+database ref.bib # Path to refer bibliography file from current working directory (can also be absolute directory)
+accumulate # Prints References at end of the document (same as `-e` argument for refer)
+move-punctuation # Ensures citations appear before punctuations (same as `-P` argument for refer)
+sort A+ # Sorts References in alphabetical order
+label "(A1?(A1.n(A3?' et al.':A2&amp;' &amp; 'A2.n)):Q)', '(D.y|D)" # "Author(s), Date" format for parenthetical citation (joins author names using '&amp;' if 2 authors; appends 'et. al.' if 3 or more)
+bracket-label " (" ) "; " # (same as `-S` argument for refer)
+no-label-in-reference # Do not display (Author(s), Date) like footnotes in reference list
+.R2 \" Refer block end
+</code></pre></div></div>
+
+<h2 id="narrative-citation-">Narrative Citation <a name="narrativecitation"></a></h2>
+
+<p>My lecturer luckily did not require me to use narrative citations, but yours might. If you do have to use narrative citation, unfortunately, refer does not have any support for narrative citations being alongside parenthetical citations. While it is possible to repurpose the citation formatting part of the refer block to change it from parenthetical to narrative, it would still not be possible to have both narrative and parenthetical citation on the same page.</p>
+
+<p>The only practical solution I see to this problem is to keep the refer block as-is and write the narrative citations manually. This will require you to have a separate document for producing the referencing for the narrative citations, because refer will not make entries for them in the reference list as it will not recognise the narrative citations that you manually typed in, treating them like ordinary text. This also means that you need to generate 2 separate output PDFs and extract the correct reference list from the one without narrative citations to merge with the other one that does. Any PDF-editing tool can be used for this, but the best free and open-source one that I found was <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a>.</p>
+
+<h1 id="reference-list-">Reference List <a name="referencelist"></a></h1>
+
+<p>This section is where we start to dive into refer’s code (usually located inside either <code class="language-plaintext highlighter-rouge">/usr/share/groff/current/tmac</code> or <code class="language-plaintext highlighter-rouge">/usr/local/share/groff/current/tmac</code>). Rest assured, the changes that will be made will not be difficult as long as you know 3 things: what to change, what to change them to, and where to find them (all 3 being what I had to figure out on my own by reading and tinkering with the source code).</p>
+
+<h2 id="formatting-the-heading-">Formatting the Heading <a name="formattingtheheading"></a></h2>
+
+<p>The “References” heading is left-aligned by default, whereas <a href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/reference-list">APA wants it centered</a>. Some extra changes not specified by APA my lecturer wanted were to make the Heading a little bigger and add an extra line of space below it.</p>
+
+<p>On lines 75–79 of <code class="language-plaintext highlighter-rouge">refer-ms.tmac</code>, you will find this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.de ref*biblio-start-hook
+.  SH
+.  nop \&amp;\\*[REFERENCES]
+.  par@reset
+..
+</code></pre></div></div>
+
+<p>And this is what it will look like fixing the issues (lines that are commented out (denoted by <code class="language-plaintext highlighter-rouge">\"</code>) do not strictly conform to APA, uncomment them to use them):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.de ref*biblio-start-hook
+.\"  nr PS 14
+.  SH
+.  ce
+.  nop \&amp;\\*[REFERENCES]
+.\"  sp
+.\"  nr PS 12
+.  par@reset
+..
+</code></pre></div></div>
+
+<p>Below is a list explaining each change made:</p>
+
+<ul>
+  <li>To make the heading centered, put <code class="language-plaintext highlighter-rouge">.ce</code> above where the heading is rendered (<code class="language-plaintext highlighter-rouge">.nop \%\\*[REFERENCES]</code>).</li>
+  <li>(Optional) <code class="language-plaintext highlighter-rouge">.nr PS 14</code> above it increases the font size to 14pt, just remember to reset it back to normal (12pt) with <code class="language-plaintext highlighter-rouge">.nr PS 12</code> after.</li>
+  <li>(Optional) <code class="language-plaintext highlighter-rouge">.sp</code> adds an extra line of space below it.</li>
+</ul>
+
+<h2 id="space-between-entries-">Space Between Entries <a name="spacebetweenentries"></a></h2>
+
+<p>There is no space between reference entries by default, which can make it look cramped. This is already conforming to APA, but my lecturer wanted extra padding between the entries (even if that meant <a href="https://apastyle.apa.org/style-grammar-guidelines/paper-format/reference-list">breaking APA guidelines</a>).</p>
+
+<p>Inside <code class="language-plaintext highlighter-rouge">refer-ms.tmac</code> on lines 44–45, you can find this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.de ref*biblio-item-end
+..
+</code></pre></div></div>
+
+<p>(Optional) Just like how we added a space below the “References” heading, use <code class="language-plaintext highlighter-rouge">.sp</code> to add a line of space between each entry in the reference list:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.de ref*biblio-item-end
+.  sp
+..
+</code></pre></div></div>
+
+<h2 id="field-ordering-">Field Ordering <a name="fieldordering"></a></h2>
+
+<p>The way refer orders the fields of each reference entry is hard-coded and different from what APA desires. More specifically, the date field is placed after the title field instead of being in between it and the author(s) field.</p>
+
+<p>There will be these 5 lines that dictate the order of the fields of each entry on lines 53–57 of <code class="language-plaintext highlighter-rouge">refer-ms.tmac</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds ref*spec!0  Q A T S V N P I C D O
+.ds ref*spec!1  Q A T J S V N P I C D O
+.ds ref*spec!2  Q A T S V P I C D O
+.ds ref*spec!3  Q A T B E S V P I C D O
+.ds ref*spec!4  Q A T R G P I C D O
+</code></pre></div></div>
+
+<p>Documentation for what each of the <code class="language-plaintext highlighter-rouge">ref*spec!N</code> mean can be found in the comments at the top of <code class="language-plaintext highlighter-rouge">refer.tmac</code> on lines 67–71:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.\"   ref*spec!0  Q A T S V N P I C D O      -- other
+.\"   ref*spec!1  Q A T J S V N P I C D O    -- journal article
+.\"   ref*spec!2  Q A T S V P I C D O        -- book
+.\"   ref*spec!3  Q A T B E S V P I C D O    -- article within book
+.\"   ref*spec!4  Q A T R G P I C D O        -- technical report
+</code></pre></div></div>
+
+<p>The values for the letters after the <code class="language-plaintext highlighter-rouge">ref*spec!N</code> are specified in the bibliography file linked in the refer block (<code class="language-plaintext highlighter-rouge">ref.bib</code>).</p>
+
+<p>Rearranging <code class="language-plaintext highlighter-rouge">D</code> (date) into the correct order (right after <code class="language-plaintext highlighter-rouge">A</code> (author(s)) and before <code class="language-plaintext highlighter-rouge">T</code> (title)):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds ref*spec!0  Q A D T S V N P I C O
+.ds ref*spec!1  Q A D T J S V N P I C O
+.ds ref*spec!2  Q A D T S V P I C O
+.ds ref*spec!3  Q A D T B E S V P I C O
+.ds ref*spec!4  Q A D T R G P I C O
+</code></pre></div></div>
+
+<h2 id="punctuation-">Punctuation <a name="punctuation"></a></h2>
+
+<p>Switching the order of the fields messes up the hard-coded punctuation order, but there are also some defaults that do not follow APA guidelines.</p>
+
+<p>Go to lines 59–73 of <code class="language-plaintext highlighter-rouge">refer-ms.tmac</code>, where you will find this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds ref*spec!A     ",  " "
+.ds ref*spec!B     """ " " "in \fI" ""    "\fP"
+.ds ref*spec!D     """ " " "("      ")"
+.ds ref*spec!E     ",  " " "ed. "
+.ds ref*spec!G     """ " " "("      ")"
+.ds ref*spec!J     ",  " " "\fI"    ""    "\fP"
+.ds ref*spec!N     """ "(" ""       ")"
+.ds ref*spec!O     ".  " "
+.ds ref*spec!P     ",  " " "p.\~"
+.ds ref*spec!PP    ",  " " "pp.\~"
+.ds ref*spec!T     ",  " " "\\*Q"   ""    "\\*U"
+.ds ref*spec!T:0   ",  " " "\fI"    ""    "\fP"
+.ds ref*spec!T:2   ",  " " "\fI"    ""    "\fP"
+.ds ref*spec!V     """ " " "\fB"    "\fR"
+.ds ref*spec!dflt  ",  " "
+</code></pre></div></div>
+
+<p>It will look like nonsense at first, but documentation can be found in the comments of <code class="language-plaintext highlighter-rouge">refer.tmac</code> on lines 84–110:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.\"   arg 1  the punctuation character to use to separate this field
+.\"          from the previous field
+.\"   arg 2  a string to insert after the punctuation character of the
+.\"          previous field (normally a space)
+.\"   arg 3  a string with which to prefix this field
+.\"   arg 4  a string with which to postfix this field
+.\"   arg 5  a string to add after the punctuation character supplied
+.\"          by the next field
+.\"
+.\"                  1  2   3        4     5
+.\"   ------------------------------------------------------------------
+.\"   ref*spec!A     ,  " "                       -- author name
+.\"   ref*spec!B     "" " " "in \fI" ""    "\fP"  -- bk title of article
+.\"   ref*spec!D     "" " " "("      ")"          -- date of publication
+.\"   ref*spec!E     ,  " " "ed. "                -- editor
+.\"   ref*spec!G     "" " " "("      ")"          -- US Gov. ordering #
+.\"   ref*spec!J     ,  " " "\fI"    ""    "\fP"  -- journal name
+.\"   ref*spec!N     "" "(" ""       ")"          -- issue number
+.\"   ref*spec!O     .  " "                       -- other information
+.\"   ref*spec!P     ,  " " "p.\~"                -- page
+.\"   ref*spec!PP    ,  " " "pp.\~"               -- page range
+.\"   ref*spec!T     ,  " " "\\*Q"   ""    "\\*U" -- journal title
+.\"   ref*spec!T:0   ,  " " "\fI"    ""    "\fP"  -- book title (other)
+.\"   ref*spec!T:2   ,  " " "\fI"    ""    "\fP"  -- book title (book)
+.\"   ref*spec!V     "" " " "\fB"    "\fR"        -- volume number
+.\"
+.\"   ref*spec!dflt  ,  " "                       -- all other entries
+</code></pre></div></div>
+
+<p>This is how it looks like after some changes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds ref*spec!A     ",  " "
+.ds ref*spec!B     """ " " "in \fI" "\fP"
+.ds ref*spec!D     """ " " "("      ")"
+.ds ref*spec!E     ",  " " "ed. "   ""
+.ds ref*spec!G     """ " " "("      ")"
+.ds ref*spec!J     ".  " " "\fI"    "\fP"
+.ds ref*spec!N     """ "(" ""       ")"
+.ds ref*spec!O     ".  " "
+.ds ref*spec!P     ",  " " "p.\~"
+.ds ref*spec!PP    ",  " " "pp.\~"
+.ds ref*spec!T     ".  " "
+.ds ref*spec!T:0   ".  " "
+.ds ref*spec!T:2   ".  " "
+.ds ref*spec!V     ",  " " "\fI"    "\fR"
+.ds ref*spec!dflt  ",  " "
+</code></pre></div></div>
+
+<p>The list below details the changes:</p>
+
+<ul>
+  <li>In the <code class="language-plaintext highlighter-rouge">.ds ref*spec!J</code> row, its <code class="language-plaintext highlighter-rouge">arg 1</code> is changed from a comma (<code class="language-plaintext highlighter-rouge">,</code>) to a period (<code class="language-plaintext highlighter-rouge">.</code>) to add a period after the title field.</li>
+  <li>In the <code class="language-plaintext highlighter-rouge">.ds ref*spec!T</code> row, <code class="language-plaintext highlighter-rouge">\\*Q</code> and <code class="language-plaintext highlighter-rouge">\\*U</code> are removed to remove the opening and closing double quotation marks, respectively, around the title field.</li>
+  <li>In both the <code class="language-plaintext highlighter-rouge">.ds ref*spec!T:0</code> and <code class="language-plaintext highlighter-rouge">.ds ref*spec!T:2</code> rows, <code class="language-plaintext highlighter-rouge">\fI</code> in <code class="language-plaintext highlighter-rouge">arg 3</code> and <code class="language-plaintext highlighter-rouge">\fP</code> in <code class="language-plaintext highlighter-rouge">arg 5</code> are removed to not italicise the text and because of redundancy (<code class="language-plaintext highlighter-rouge">\fP</code> resets font style back to normal), respectively.</li>
+  <li>In the <code class="language-plaintext highlighter-rouge">.ds ref*spec!V</code> row, its <code class="language-plaintext highlighter-rouge">arg 1</code> is changed from empty (<code class="language-plaintext highlighter-rouge">""</code>) to a comma (<code class="language-plaintext highlighter-rouge">,</code>) to add a comma after the journal/periodical field; its <code class="language-plaintext highlighter-rouge">arg 3</code> is changed from bold-ing (<code class="language-plaintext highlighter-rouge">\fI</code>) to italicising (<code class="language-plaintext highlighter-rouge">\fB</code>) the text.</li>
+  <li>All <code class="language-plaintext highlighter-rouge">\fP</code> in <code class="language-plaintext highlighter-rouge">arg 5</code> are moved to <code class="language-plaintext highlighter-rouge">arg 4</code> to make sure the punctuations after each field are not in bold or italics.</li>
+</ul>
+
+<h3 id="authors-ands--ampersands-">Authors, Ands &amp; Ampersands <a name="authorsandsampersands"></a></h3>
+
+<p>By default, refer prepends “and” before the last author for more than 1 author. This is in contrast to the ampersand (&amp;) that APA wants.</p>
+
+<p>It should have been an easy fix to simply replace an “and” in one of the refer tmac files, but there is surprisingly no such thing to be found in any of the 2 files.</p>
+
+<p>A solution to this is to simply manually type out the whole Authors field in the bibliography file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%K key123
+%A Author, A., Author, B. &amp; Author, C.
+%D 2025
+%T Title
+%J Journal
+%V 123
+%N 456
+%P 999
+%O https://doi.org/12.34
+</code></pre></div></div>
+
+<p>As opposed to how it would usually be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%K key123
+%A Author, A., Author, B. &amp; Author, C.
+%D 2025
+%T Title
+%J Journal
+%V 123
+%N 456
+%P 999
+%O https://doi.org/12.34
+</code></pre></div></div>
+
+<p>However, this solution conflicts with the format of in-text citations, as described in the subsection below.</p>
+
+<h4 id="effect-on-citations-">Effect on Citations <a name="effectoncitations"></a></h4>
+
+<p>Due to having only one <code class="language-plaintext highlighter-rouge">%A</code> in the bibliography file, refer will think that there is only one author and the formatting for citations specified in the refer block will not work.</p>
+
+<p>There is a solution for this. It is not pretty, but it works. Similarly to what you would do in the solution described in the Narrative Citations section, you would have to have 2 separate bibliography files: one that generates the correct citations (normal file with multiple <code class="language-plaintext highlighter-rouge">%A</code> for multiple authors) and one that generates the correct author field in the reference entry (modified file with only one <code class="language-plaintext highlighter-rouge">%A</code> for multiple authors). After compiling both versions of the document by changing the argument of <code class="language-plaintext highlighter-rouge">bibliography</code> in the refer block to switch between both of the bibliography files, use a PDF-editing tool to extract and combine the correct citations and references into one final file.</p>
+
+<h3 id="period-suppression-">Period Suppression <a name="periodsuppression"></a></h3>
+
+<p>By default, refer appends a period at the end of each entry. This means that a period is added after the last field that contains a DOI or URL, which APA has <a href="https://apastyle.apa.org/instructional-aids/reference-guide.pdf">explicitly stated to not do</a>.</p>
+
+<p>To fix this, first go into <code class="language-plaintext highlighter-rouge">refer.tmac</code>, where you will find this on lines 210–213:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.	\" now add a final period
+.	ie d ref*string \{\
+.		if !\\n[ref*suppress-period] \
+.			as ref*string .
+</code></pre></div></div>
+
+<p>Now just remove the period (<code class="language-plaintext highlighter-rouge">.</code>) on the last line (213):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.	\" now add a final period
+.	ie d ref*string \{\
+.		if !\\n[ref*suppress-period] \
+.			as ref*string
+</code></pre></div></div>
+
+<h1 id="exporting-as-pdf-">Exporting as PDF <a name="exportingaspdf"></a></h1>
+
+<p>The plaintext document can be compiled with either <code class="language-plaintext highlighter-rouge">groff</code>,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>groff -ms -Tpdf -R -dpaper=a4 -P-pa4 sample.ms &gt; sample.pdf
+</code></pre></div></div>
+
+<p>or <code class="language-plaintext highlighter-rouge">pdfroff</code> (which is just a wrapper around <code class="language-plaintext highlighter-rouge">groff</code>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdfroff -ms -R -dpaper=a4 -P-pa4 sample.ms &gt; sample.pdf
+</code></pre></div></div>
+
+<p>I found that <code class="language-plaintext highlighter-rouge">pdfroff</code> produces better-looking text output, but it may need to be installed separately for macOS, which uses an older version of <code class="language-plaintext highlighter-rouge">groff</code> that does not come packaged with <code class="language-plaintext highlighter-rouge">pdfroff</code>.</p>
+
+<p>Below is a list explaining what each of the optional arguments mean:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-ms</code> selects ms macros.</li>
+  <li><code class="language-plaintext highlighter-rouge">-Tpdf</code> compiles it to PDF; it is not needed for <code class="language-plaintext highlighter-rouge">pdfroff</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">-R</code> selects refer macros.</li>
+  <li>(Optional) <code class="language-plaintext highlighter-rouge">-dpaper=a4</code> and <code class="language-plaintext highlighter-rouge">-P-pa4</code> exports the paper to the international-standard A4 size instead of the default US letter.</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>If you found this helpful in any way or have any questions, feel free to leave a comment below.</p>
+
+<script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
+</script>]]></content><author><name></name></author><category term="groff," /><category term="ms," /><category term="refer," /><category term="macro," /><category term="tmac," /><category term="APA," /><category term="style" /><category term="guide," /><category term="pdf" /><summary type="html"><![CDATA[Table of Contents]]></summary></entry><entry><title type="html">Dark Mode with CSS @media Queries</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode with CSS @media Queries" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<h1 id="why-dark-mode">Why Dark Mode</h1>
 
 <p>For users visiting a website in a dark room at night, it would be less straining for their eyes if the webpage was displayed in a darker colour to match the environment, which is what <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a> does.</p>
 
