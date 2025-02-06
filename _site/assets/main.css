@@ -203,7 +203,7 @@ h2 { color: #1a1a1a; font-family: sans-serif; }
 
 h3 { color: #262626; font-family: sans-serif; }
 
-p, ol, ul { font-family: serif; color: #333333; hyphens: auto; text-align: justify; line-height: 1.75; }
+p, ol, ul { color: #333333; font-family: serif; hyphens: auto; text-align: justify; line-height: 150%; }
 
 @media (prefers-color-scheme: dark) { body { background-color: #262626; }
   h1 { color: #f2f2f2; }

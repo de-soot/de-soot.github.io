@@ -1,8 +1,9 @@
 # de-soot.github.io
 
-A place on the internet where I write about my write about my interests, hobbies, and projects.
+A place on the internet where I write about my write about things that interest me.
 
 ## Usage
+
 ### Visit Online
 
 Click [here](https://de-soot.github.io)
@@ -30,3 +31,22 @@ bundle exec jekyll serve
 7) Profit!
 
 Refer to the [official Jekyll documentation](https://jekyllrb.com/docs) for more information regarding installing and running Jekyll.
+
+### Write a Blog Post
+
+1. Create a markdown (`.md`) file inside `/_posts` with this at the top of the document:
+
+```md
+---
+layout: post
+title:
+date: YYYY-MM-DD
+categories:
+permalink: /...
+---
+```
+
+2. Write the title of the post after `title:`.
+3. Replace `YYYY`, `MM`, and `DD` with the year, month, and day the post is published, respectively.
+4. Add any keywords related to the topic of your post after `categories:` separated by commas.
+5. Replace the `...` after `permalink:` with the custom path given to the blog post.
