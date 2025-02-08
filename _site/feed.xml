@@ -1,47 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-07T23:02:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-08T12:55:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>hosted on github pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
 
-<p><a href="/groff-apa#preface">Preface</a></p>
-
-<p><a href="/groff-apa#introduction">Introduction</a></p>
-
-<p><a href="/groff-apa#prerequisites">Prerequisites</a></p>
-
-<p><a href="/groff-apa#coverpage">Cover Page</a></p>
-
-<p><a href="/groff-apa#pagenumbering">Page Numbering</a></p>
-
-<p><a href="/groff-apa#font">Font</a></p>
-<ul>
-  <li><a href="/groff-apa#fontfamily">Font Family</a>
+<ol>
+  <li>
+    <p><a href="/groff-apa#tableofcontents">Table of Contents</a></p>
+  </li>
+  <li>
+    <p><a href="/groff-apa#preface">Preface</a></p>
+  </li>
+  <li>
+    <p><a href="/groff-apa#introduction">Introduction</a></p>
+  </li>
+  <li>
+    <p><a href="/groff-apa#prerequisites">Prerequisites</a></p>
+  </li>
+  <li>
+    <p><a href="/groff-apa#coverpage">Cover Page</a></p>
+  </li>
+  <li>
+    <p><a href="/groff-apa#pagenumbering">Page Numbering</a></p>
+  </li>
+  <li><a href="/groff-apa#font">Font</a>
     <ul>
-      <li><a href="/groff-apa#defaultfonts">Default Fonts</a></li>
-      <li><a href="/groff-apa#customfonts">Custom Fonts</a></li>
+      <li><a href="/groff-apa#fontfamily">Font Family</a>
+        <ul>
+          <li><a href="/groff-apa#defaultfonts">Default Fonts</a></li>
+          <li><a href="/groff-apa#customfonts">Custom Fonts</a></li>
+        </ul>
+      </li>
+      <li><a href="/groff-apa#fontsize">Font Size</a></li>
+      <li><a href="/groff-apa#linespacing">Line Spacing</a></li>
+      <li><a href="/groff-apa#fontstyle">Font Style</a></li>
     </ul>
   </li>
-  <li><a href="/groff-apa#fontsize">Font Size</a></li>
-  <li><a href="/groff-apa#linespacing">Line Spacing</a></li>
-  <li><a href="/groff-apa#fontstyle">Font Style</a></li>
-</ul>
-
-<p><a href="/groff-apa#intextcitation">In-text Citation</a></p>
-<ul>
-  <li><a href="/groff-apa#parentheticalcitation">Parenthetical Citation</a></li>
-  <li><a href="/groff-apa#narrativecitation">Narrative Citation</a></li>
-</ul>
-
-<p><a href="/groff-apa#referencelist">Reference List</a></p>
-<ul>
-  <li><a href="/groff-apa#formattingtheheading">Formatting the Heading</a></li>
-  <li><a href="/groff-apa#spacebetweenentries">Space Between Entries</a></li>
-  <li><a href="/groff-apa#fieldordering">Field Ordering</a></li>
-  <li><a href="/groff-apa#punctuation">Punctuation</a>
+  <li><a href="/groff-apa#intextcitation">In-text Citation</a>
     <ul>
-      <li><a href="/groff-apa#periodsuppression">Period Suppression</a></li>
+      <li><a href="/groff-apa#parentheticalcitation">Parenthetical Citation</a></li>
+      <li><a href="/groff-apa#narrativecitation">Narrative Citation</a></li>
     </ul>
   </li>
-</ul>
-
-<p><a href="/groff-apa#exportingaspdf">Exporting as PDF</a></p>
+  <li><a href="/groff-apa#referencelist">Reference List</a>
+    <ul>
+      <li><a href="/groff-apa#formattingtheheading">Formatting the Heading</a></li>
+      <li><a href="/groff-apa#spacebetweenentries">Space Between Entries</a></li>
+      <li><a href="/groff-apa#fieldordering">Field Ordering</a></li>
+      <li><a href="/groff-apa#punctuation">Punctuation</a>
+        <ul>
+          <li><a href="/groff-apa#periodsuppression">Period Suppression</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="/groff-apa#exportingaspdf">Exporting as PDF</a></p>
+  </li>
+  <li><a href="/groff-apa#conclusion">Conclusion</a></li>
+</ol>
 
 <h1 id="preface-">Preface <a name="preface"></a></h1>
 
@@ -189,6 +202,7 @@ sort A+ # Sorts References in alphabetical order
 label "(A1?(A1.n(A3?' et al.':A2&amp;' &amp; 'A2.n)):Q)', '(D.y|D)" # "Author(s), Date" format for parenthetical citation (joins author names using '&amp;' if 2 authors; appends 'et. al.' if 3 or more)
 bracket-label " (" ) "; " # (same as `-S` argument for refer)
 no-label-in-reference # Do not display (Author(s), Date) like footnotes in reference list
+join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;) when joining author names in reference entry
 .R2 \" Refer block end
 </code></pre></div></div>
 
@@ -412,7 +426,7 @@ no-label-in-reference # Do not display (Author(s), Date) like footnotes in refer
   <li>(Optional) <code class="language-plaintext highlighter-rouge">-dpaper=a4</code> and <code class="language-plaintext highlighter-rouge">-P-pa4</code> exports the paper to the international-standard A4 size instead of the default US letter.</li>
 </ul>
 
-<h1 id="conclusion">Conclusion</h1>
+<h1 id="conclusion-">Conclusion <a name="conclusion"></a></h1>
 
 <p>If you found this helpful in any way or have any questions, feel free to leave a comment below.</p>
 
