@@ -20,7 +20,7 @@
 
 title: de_soot
 github_username:  de-soot
-description: hosted on github pages
+description: Hosted on Github Pages
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://de-soot.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: de-soot.github.io
