@@ -10,7 +10,7 @@ I added a commenting feature for the blog using [giscus][giscus]. Basically, it 
 
 # Try it
 
-You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the repository's Github Discussions directly and it will show up on the comments section on the website similarly.
+You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the [repository's Github Discussions](https://github.com/de-soot/de-soot.github.io/discussions) directly and it will show up on the comments section on the website similarly.
 
 # Add it to your own Github Pages website
 
@@ -24,7 +24,7 @@ You can test it out yourself on this blog post in the comments below by signing 
 
 Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page's title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the `<script>`'s `data-strict` attribute value to `"1"`), and hence Giscus will create a new Github Discussion.
 
-Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet rather than when your post already has comments in its own Discussion and you have to manually copy across those changes.
+Giscus also does not update or sync the posts made on Github Discussions with the blogs on your website, so you may have to manually copy across the changes and edits you make to your blog posts. Luckily, giscus only creates a post on Discussions when there is interaction (reactions or comments) with giscus on your blog post, so it should not be an issue for new blog posts that no one has commented or reacted to yet.
 
 [giscus]: https://giscus.app
 [discussions]: https://github.com/de-soot/de-soot.github.io/discussions
