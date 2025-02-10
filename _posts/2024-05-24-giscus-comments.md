@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Comments on Github Pages with Giscus
+title: Comments on Github Pages with giscus
 date: 2024-05-24
 categories: comments, giscus, github pages, github discussions, static websites
 permalink: /giscus-comments
 ---
 
-I added a commenting feature for the blog using [giscus][giscus]. Basically, it uses [Github Discussions][discussions-docs] to store comments instead of storing it in its own database on the web server. Since this website is hosted on [Github Pages][pages-docs] and Pages only supports static websites, it cannot host its own databases to store things such as comments.
+I added a commenting feature for the blog using [giscus][giscus]. Basically, it uses [Github Discussions][discussions-docs] to store comments instead of storing it in its own database on the web server. Since this website is hosted on [Github Pages][pages-docs] and Pages only supports static websites, it cannot host its own databases to store things such as comments. This guide explains how to add giscus comments to statically-hosted websites, and some quirks and caveats with using Github Discussions as a database for your comments.
 
 # Try it
 
-You can test it out yourself in the comments on blog post below by signing into your github account and commenting, or you can comment on the repository's Github Discussions directly and it will show up on the comments section on the website similarly.
+You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the repository's Github Discussions directly and it will show up on the comments section on the website similarly.
 
 # Add it to your own Github Pages website
 
@@ -19,8 +19,6 @@ You can test it out yourself in the comments on blog post below by signing into 
 2) Navigate to `giscus.app` on your browser's address bar and follow the instructions under the "Configuration" section to configure your `<script>` tag attribute values.
 
 3) After you have done so, you can simply copy and paste it into your webpage!
-
----
 
 # Note
 
