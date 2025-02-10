@@ -10,7 +10,7 @@ I added a commenting feature for the blog using [giscus][giscus]. Basically, it 
 
 # Try it
 
-You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the [repository's Github Discussions](https://github.com/de-soot/de-soot.github.io/discussions) directly and it will show up on the comments section on the website similarly.
+You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the [Github Discussions post](https://github.com/de-soot/de-soot.github.io/discussions/22) directly and it will show up on the comments section on the website similarly.
 
 # Add it to your own Github Pages website
 

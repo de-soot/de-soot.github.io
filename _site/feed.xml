@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-10T12:53:17+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-10T12:57:35+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
 
 <h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
 
@@ -632,7 +632,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 
 <h1 id="try-it">Try it</h1>
 
-<p>You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the <a href="https://github.com/de-soot/de-soot.github.io/discussions">repository’s Github Discussions</a> directly and it will show up on the comments section on the website similarly.</p>
+<p>You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the <a href="https://github.com/de-soot/de-soot.github.io/discussions/22">Github Discussions post</a> directly and it will show up on the comments section on the website similarly.</p>
 
 <h1 id="add-it-to-your-own-github-pages-website">Add it to your own Github Pages website</h1>
 
