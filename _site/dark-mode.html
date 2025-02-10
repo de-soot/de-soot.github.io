@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Dark Mode with CSS @media Queries | de_soot</title>
+<title>Dark Mode without Javascript | de_soot</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Dark Mode with CSS @media Queries" />
+<meta property="og:title" content="Dark Mode without Javascript" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Why Dark Mode" />
-<meta property="og:description" content="Why Dark Mode" />
+<meta name="description" content="This guide explains why and how to easily make a dark theme for your website using CSS @media queries." />
+<meta property="og:description" content="This guide explains why and how to easily make a dark theme for your website using CSS @media queries." />
 <link rel="canonical" href="http://localhost:4000/dark-mode" />
 <meta property="og:url" content="http://localhost:4000/dark-mode" />
 <meta property="og:site_name" content="de_soot" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-09-07T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Dark Mode with CSS @media Queries" />
+<meta property="twitter:title" content="Dark Mode without Javascript" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"Why Dark Mode","headline":"Dark Mode with CSS @media Queries","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dark-mode"},"url":"http://localhost:4000/dark-mode"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"This guide explains why and how to easily make a dark theme for your website using CSS @media queries.","headline":"Dark Mode without Javascript","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dark-mode"},"url":"http://localhost:4000/dark-mode"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="de_soot" /></head>
 <body><header class="site-header" role="banner">
@@ -40,14 +40,18 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Dark Mode with CSS @media Queries</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Dark Mode without Javascript</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2024-09-07T00:00:00+08:00" itemprop="datePublished">Sep 7, 2024
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="why-dark-mode">Why Dark Mode</h1>
+    <p>This guide explains why and how to easily make a dark theme for your website using CSS <code class="language-plaintext highlighter-rouge">@media</code> queries.</p>
+
+<p>Alternative title: System default theme for websites</p>
+
+<h1 id="why-dark-mode">Why Dark Mode</h1>
 
 <p>For users visiting a website in a dark room at night, it would be less straining for their eyes if the webpage was displayed in a darker colour to match the environment, which is what <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a> does.</p>
 
@@ -62,7 +66,7 @@
 
 <h2 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h2>
 
-<p>There also exists a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube</a> if you prefer to follow along with a video.</p>
+<p>There is also a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube</a> if you prefer to follow along with a video.</p>
 
 <h3 id="external-style-sheet">External Style Sheet</h3>
 
@@ -115,11 +119,11 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
+<h2 id="for-static-site-generator-websites">For Static Site Generator Websites</h2>
 
-<p>It is a little bit less straightforward to do this with a static site generator like Jekyll (which has native support with Github Pages and is what this website uses) or Hugo as you have to override the theme’s CSS style sheet.</p>
+<p>It is a little bit less straightforward to do this with static site generators like Jekyll (which is what this website uses) or Hugo, as you have to override the theme’s CSS style sheet.</p>
 
-<p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file and after which you should get something that resembles this:</p>
+<p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file, and after which you should get something resembling this:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
 <span class="nt">---</span>
@@ -142,7 +146,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>For other static-site-generator websites, you can refer to the official documentation found online for information on how to override your theme’s CSS.</p>
+<p>For other static site generator websites, you can refer to the official documentation found online for information on how to override your theme’s style-sheet.</p>
 
 <h1 id="configure-giscus-theme">Configure Giscus Theme</h1>
 
@@ -161,11 +165,9 @@
 
 <h1 id="why-not-use-a-toggleable-button-instead">Why Not Use a Toggleable Button Instead</h1>
 
-<p>Rather than defaulting to light or dark mode and having a separate button for the user to manually switch to their preferred theme, it might be better to automatically default to what they already set their browser’s preferred theme to.</p>
+<p>Most likely those who prefer only using one theme will set it in their browser settings, so it would be redundant to have them click another button to toggle the theme on a website.</p>
 
-<p>This is so they do not get flashbanged by their monitors at night if your website defaults to light theme and they open their browser to your website for the first time, if they did not toggle it to dark mode the last time they visited, or if your website does not store cookies about their previously toggled theme.</p>
-
-<p>You can also include the button to toggle themes on the website alongside defaulting it if you want, but I find this an unnecessary use of <a href="https://www.javascript.com">Javascript</a>.</p>
+<p>Rather than defaulting to light or dark mode and having a separate button for the user to manually switch to their preferred theme, it might be better to automatically switch to their system default or preferred browser theme.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 

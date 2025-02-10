@@ -2,15 +2,34 @@
 layout: post
 title: Justify and Hyphenate Text on Websites using CSS
 date: 2024-09-07
-categories: justify, text-align, jekyll, css
+categories: justify, text-align, jekyll, css, static site generator
 permalink: /justify-text
 ---
 
-You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are --- that they always align as blocks of text no matter how you change your browser window's size. This is because I have justified the text on my website using CSS.
+This blog guide goes into why and how to justify and hyphenate text on your website without Javascript.
+
+# For Static-Site-Generator Websites
+
+It is a little bit less straightforward to do this with static site generators like Jekyll (which is what this website uses) or Hugo, you will have to override the theme's CSS style sheet.
+
+There is a [blog post by Tom Kadwill on how to override your CSS styles in Jekyll][css-blog] you can follow to create your SCSS file, and after which you should get something resembling this:
+
+```css
+---
+---
+
+@import "minima"; /* replace minima inside the quotes with your Jekyll theme */
+```
+
+After this, you can follow all the steps below the same way as it would be done if you were using CSS in a non-static-site-generator instead of SCSS in a static site generator.
+
+# Why Justify Text
+
+It is more of an aesthetic preference than anything. This jaggedness generally does not bother people that much because they have grown used to the popular left-aligned style of text on the web and probably do not know justification even exists on the web, only on printed books and newspapers. But it just looks better to me when all lines are the same length and the right side of text is not jagged. Justifcation is a way of acheiving that aesthetic goal without cutting words off abruptly.
 
 # How to Justify
 
-It is actually pretty simple --- to justify your body text, just add this to your CSS style sheet:
+It is actually pretty simple. To justify your body text, just add this to your CSS style sheet:
 
 ```css
 body {
@@ -18,11 +37,21 @@ body {
 }
 ```
 
-This will justify your text so it all aligns neatly without jagged edges.
+# Why Hyphenate
+
+Text justification can make your paragraphs look tidier, but it has the side-effect of awkwardly stretching out the whitespace between words, which can create and worsen an undesirable effect commonly referred to as 'rivers of white'. This effect is known to make text harder for dyslexic readers to read, decreasing accessibility.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect.">
+
+This is why justification is generally [not][applewood] [recommended][max] for text output on the web.
+
+By hyphenating, even though it does not solve the problem completely, it will reduce this effect significantly while keeping text not jagged.
+
+Hyphenating text will cut off some words at the end of lines (indicated by an auto-inserted hyphen), but it will do it with an algorithm that tries to make it seamless.
 
 # How to Hyphenate
 
-Although there is a way to do this with Javascript using [Hyphenopoly.js][hyphenopoly], hyphenation is a built-in functionality in CSS and it is widely supported by browsers.
+Although there is a way to hyphenate with Javascript using [Hyphenopoly.js][hyphenopoly], there already is a built-in functionality in CSS to do this and it is [widely supported by browsers](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens).
 
 To add hyphenation to your body text, simply add the `hyphens` property to your body section in your CSS style sheet and set it to `auto`, like so:
 
@@ -31,18 +60,6 @@ body {
     hyphens: auto
 }
 ```
-
-# Why Hyphenate
-
-So now your text wraps words using hyphens, but why do we need to use hyphens that ruin the perfect edges that justifying makes?
-
-Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out the whitespace between words --- which can create and worsen an undesirable effect commonly referred to as 'rivers of white', which is known to trip up dyslexic readers and decrease accessibility.
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect.">
-
-This is also a common reason as to why justification is generally [not][applewood] [recommended][max] for text output on the web.
-
-By hyphenating, even though it does not solve it completely, it will reduce the effect dramatically.
 
 # Other Blogs That Justify
 
@@ -66,6 +83,7 @@ f you found this blog post useful, leave a comment down below! Also read how to 
 [applewood]: https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text 
 [pubdeliver]: https://publicdelivery.org
 [hyphenopoly]: https://mnater.github.io/Hyphenopoly
+[css-blog]: https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll
 
 <script src="https://giscus.app/client.js"
         data-repo="de-soot/de-soot.github.io"

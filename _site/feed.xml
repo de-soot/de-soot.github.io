@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-09T13:02:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-10T12:42:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
+
+<h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
 
 <ol>
   <li>
@@ -428,10 +430,14 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 
 <h1 id="conclusion-">Conclusion <a name="conclusion"></a></h1>
 
-<p>If you found this helpful in any way or have any questions, feel free to leave a comment below.</p>
+<p>If you found this helpful in any way or have any questions, feel free to leave a comment below. Also read my <a href="/justify-text">previous guide</a> on how I justify and hyphenate the text on this website.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="groff," /><category term="ms," /><category term="refer," /><category term="macro," /><category term="tmac," /><category term="APA," /><category term="style" /><category term="guide," /><category term="pdf" /><summary type="html"><![CDATA[Table of Contents]]></summary></entry><entry><title type="html">Dark Mode with CSS @media Queries</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode with CSS @media Queries" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<h1 id="why-dark-mode">Why Dark Mode</h1>
+</script>]]></content><author><name></name></author><category term="groff," /><category term="ms," /><category term="refer," /><category term="macro," /><category term="tmac," /><category term="APA," /><category term="style" /><category term="guide," /><category term="pdf" /><summary type="html"><![CDATA[This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.]]></summary></entry><entry><title type="html">Dark Mode without Javascript</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode without Javascript" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<p>This guide explains why and how to easily make a dark theme for your website using CSS <code class="language-plaintext highlighter-rouge">@media</code> queries.</p>
+
+<p>Alternative title: System default theme for websites</p>
+
+<h1 id="why-dark-mode">Why Dark Mode</h1>
 
 <p>For users visiting a website in a dark room at night, it would be less straining for their eyes if the webpage was displayed in a darker colour to match the environment, which is what <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a> does.</p>
 
@@ -446,7 +452,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 
 <h2 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h2>
 
-<p>There also exists a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube</a> if you prefer to follow along with a video.</p>
+<p>There is also a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube</a> if you prefer to follow along with a video.</p>
 
 <h3 id="external-style-sheet">External Style Sheet</h3>
 
@@ -499,11 +505,11 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
+<h2 id="for-static-site-generator-websites">For Static Site Generator Websites</h2>
 
-<p>It is a little bit less straightforward to do this with a static site generator like Jekyll (which has native support with Github Pages and is what this website uses) or Hugo as you have to override the theme’s CSS style sheet.</p>
+<p>It is a little bit less straightforward to do this with static site generators like Jekyll (which is what this website uses) or Hugo, as you have to override the theme’s CSS style sheet.</p>
 
-<p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file and after which you should get something that resembles this:</p>
+<p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file, and after which you should get something resembling this:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
 <span class="nt">---</span>
@@ -526,7 +532,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>For other static-site-generator websites, you can refer to the official documentation found online for information on how to override your theme’s CSS.</p>
+<p>For other static site generator websites, you can refer to the official documentation found online for information on how to override your theme’s style-sheet.</p>
 
 <h1 id="configure-giscus-theme">Configure Giscus Theme</h1>
 
@@ -545,33 +551,59 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 
 <h1 id="why-not-use-a-toggleable-button-instead">Why Not Use a Toggleable Button Instead</h1>
 
-<p>Rather than defaulting to light or dark mode and having a separate button for the user to manually switch to their preferred theme, it might be better to automatically default to what they already set their browser’s preferred theme to.</p>
+<p>Most likely those who prefer only using one theme will set it in their browser settings, so it would be redundant to have them click another button to toggle the theme on a website.</p>
 
-<p>This is so they do not get flashbanged by their monitors at night if your website defaults to light theme and they open their browser to your website for the first time, if they did not toggle it to dark mode the last time they visited, or if your website does not store cookies about their previously toggled theme.</p>
-
-<p>You can also include the button to toggle themes on the website alongside defaulting it if you want, but I find this an unnecessary use of <a href="https://www.javascript.com">Javascript</a>.</p>
+<p>Rather than defaulting to light or dark mode and having a separate button for the user to manually switch to their preferred theme, it might be better to automatically switch to their system default or preferred browser theme.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
 <p>If you found this blog post useful, leave a comment down below! Also check out how to add <code class="language-plaintext highlighter-rouge">giscus</code> comments to your own website on my <a href="/giscus-comments">previous guide for it</a>.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="websites" /><summary type="html"><![CDATA[Why Dark Mode]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="http://localhost:4000/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/justify-text</id><content type="html" xml:base="http://localhost:4000/justify-text"><![CDATA[<p>You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS.</p>
+</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="site" /><category term="generators," /><category term="system" /><category term="default" /><summary type="html"><![CDATA[This guide explains why and how to easily make a dark theme for your website using CSS @media queries.]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="http://localhost:4000/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/justify-text</id><content type="html" xml:base="http://localhost:4000/justify-text"><![CDATA[<p>This blog guide goes into why and how to justify and hyphenate text on your website without Javascript.</p>
+
+<h1 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h1>
+
+<p>It is a little bit less straightforward to do this with static site generators like Jekyll (which is what this website uses) or Hugo, you will have to override the theme’s CSS style sheet.</p>
+
+<p>There is a <a href="https://tomkadwill.com/2017/12/16/how-to-override-css-styles-in-jekyll">blog post by Tom Kadwill on how to override your CSS styles in Jekyll</a> you can follow to create your SCSS file, and after which you should get something resembling this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
+<span class="nt">---</span>
+
+<span class="k">@import</span> <span class="s1">"minima"</span><span class="p">;</span> <span class="c">/* replace minima inside the quotes with your Jekyll theme */</span>
+</code></pre></div></div>
+
+<p>After this, you can follow all the steps below the same way as it would be done if you were using CSS in a non-static-site-generator instead of SCSS in a static site generator.</p>
+
+<h1 id="why-justify-text">Why Justify Text</h1>
+
+<p>It is more of an aesthetic preference than anything. This jaggedness generally does not bother people that much because they have grown used to the popular left-aligned style of text on the web and probably do not know justification even exists on the web, only on printed books and newspapers. But it just looks better to me when all lines are the same length and the right side of text is not jagged. Justifcation is a way of acheiving that aesthetic goal without cutting words off abruptly.</p>
 
 <h1 id="how-to-justify">How to Justify</h1>
 
-<p>It is actually pretty simple — to justify your body text, just add this to your CSS style sheet:</p>
+<p>It is actually pretty simple. To justify your body text, just add this to your CSS style sheet:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
     <span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>This will justify your text so it all aligns neatly without jagged edges.</p>
+<h1 id="why-hyphenate">Why Hyphenate</h1>
+
+<p>Text justification can make your paragraphs look tidier, but it has the side-effect of awkwardly stretching out the whitespace between words, which can create and worsen an undesirable effect commonly referred to as ‘rivers of white’. This effect is known to make text harder for dyslexic readers to read, decreasing accessibility.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect." /></p>
+
+<p>This is why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on the web.</p>
+
+<p>By hyphenating, even though it does not solve the problem completely, it will reduce this effect significantly while keeping text not jagged.</p>
+
+<p>Hyphenating text will cut off some words at the end of lines (indicated by an auto-inserted hyphen), but it will do it with an algorithm that tries to make it seamless.</p>
 
 <h1 id="how-to-hyphenate">How to Hyphenate</h1>
 
-<p>Although there is a way to do this with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, hyphenation is a built-in functionality in CSS and it is widely supported by browsers.</p>
+<p>Although there is a way to hyphenate with Javascript using <a href="https://mnater.github.io/Hyphenopoly">Hyphenopoly.js</a>, there already is a built-in functionality in CSS to do this and it is <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens">widely supported by browsers</a>.</p>
 
 <p>To add hyphenation to your body text, simply add the <code class="language-plaintext highlighter-rouge">hyphens</code> property to your body section in your CSS style sheet and set it to <code class="language-plaintext highlighter-rouge">auto</code>, like so:</p>
 
@@ -579,18 +611,6 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
     <span class="nl">hyphens</span><span class="p">:</span> <span class="nb">auto</span>
 <span class="p">}</span>
 </code></pre></div></div>
-
-<h1 id="why-hyphenate">Why Hyphenate</h1>
-
-<p>So now your text wraps words using hyphens, but why do we need to use hyphens that ruin the perfect edges that justifying makes?</p>
-
-<p>Text justification can make your paragraphs look tidier, but this has the potential side-effect of awkwardly stretching out the whitespace between words — which can create and worsen an undesirable effect commonly referred to as ‘rivers of white’, which is known to trip up dyslexic readers and decrease accessibility.</p>
-
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Typographic_river_marking.svg/1280px-Typographic_river_marking.svg.png" alt="Image from Wikipedia with visual marking around an example of a 'rivers of white' effect." /></p>
-
-<p>This is also a common reason as to why justification is generally <a href="https://applewoodinteractive.com/accessibility/rivers-of-white-why-you-should-never-justify-your-text">not</a> <a href="https://maxwellforbes.com/posts/web-justified-text">recommended</a> for text output on the web.</p>
-
-<p>By hyphenating, even though it does not solve it completely, it will reduce the effect dramatically.</p>
 
 <h1 id="other-blogs-that-justify">Other Blogs That Justify</h1>
 
@@ -608,11 +628,11 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <p>f you found this blog post useful, leave a comment down below! Also read how to add reactive dark-mode to your website in my <a href="/dark-mode">previous blog post</a>.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="justify," /><category term="text-align," /><category term="jekyll," /><category term="css" /><summary type="html"><![CDATA[You may have noticed while reading my blog posts that the way the text are aligned are a little different from the usual way the ones from other websites are — that they always align as blocks of text no matter how you change your browser window’s size. This is because I have justified the text on my website using CSS.]]></summary></entry><entry><title type="html">Comments on Github Pages with Giscus</title><link href="http://localhost:4000/giscus-comments" rel="alternate" type="text/html" title="Comments on Github Pages with Giscus" /><published>2024-05-24T00:00:00+08:00</published><updated>2024-05-24T00:00:00+08:00</updated><id>http://localhost:4000/giscus-comments</id><content type="html" xml:base="http://localhost:4000/giscus-comments"><![CDATA[<p>I added a commenting feature for the blog using <a href="https://giscus.app">giscus</a>. Basically, it uses <a href="https://docs.github.com/en/discussions">Github Discussions</a> to store comments instead of storing it in its own database on the web server. Since this website is hosted on <a href="https://docs.github.com/en/pages">Github Pages</a> and Pages only supports static websites, it cannot host its own databases to store things such as comments.</p>
+</script>]]></content><author><name></name></author><category term="justify," /><category term="text-align," /><category term="jekyll," /><category term="css," /><category term="static" /><category term="site" /><category term="generator" /><summary type="html"><![CDATA[This blog guide goes into why and how to justify and hyphenate text on your website without Javascript.]]></summary></entry><entry><title type="html">Comments on Github Pages with giscus</title><link href="http://localhost:4000/giscus-comments" rel="alternate" type="text/html" title="Comments on Github Pages with giscus" /><published>2024-05-24T00:00:00+08:00</published><updated>2024-05-24T00:00:00+08:00</updated><id>http://localhost:4000/giscus-comments</id><content type="html" xml:base="http://localhost:4000/giscus-comments"><![CDATA[<p>I added a commenting feature for the blog using <a href="https://giscus.app">giscus</a>. Basically, it uses <a href="https://docs.github.com/en/discussions">Github Discussions</a> to store comments instead of storing it in its own database on the web server. Since this website is hosted on <a href="https://docs.github.com/en/pages">Github Pages</a> and Pages only supports static websites, it cannot host its own databases to store things such as comments. This guide explains how to add giscus comments to statically-hosted websites, and some quirks and caveats with using Github Discussions as a database for your comments.</p>
 
 <h1 id="try-it">Try it</h1>
 
-<p>You can test it out yourself in the comments on blog post below by signing into your github account and commenting, or you can comment on the repository’s Github Discussions directly and it will show up on the comments section on the website similarly.</p>
+<p>You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the repository’s Github Discussions directly and it will show up on the comments section on the website similarly.</p>
 
 <h1 id="add-it-to-your-own-github-pages-website">Add it to your own Github Pages website</h1>
 
@@ -622,8 +642,6 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 
 <p>3) After you have done so, you can simply copy and paste it into your webpage!</p>
 
-<hr />
-
 <h1 id="note">Note</h1>
 
 <p>Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page’s title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-strict</code> attribute value to <code class="language-plaintext highlighter-rouge">"1"</code>), and hence Giscus will create a new Github Discussion.</p>
@@ -631,4 +649,4 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <p>Giscus also only creates Discussions when someone comments, so it is easier to go back and edit to fix some things on your post if you do not have any comments yet rather than when your post already has comments in its own Discussion and you have to manually copy across those changes.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="comments," /><category term="giscus," /><category term="github" /><category term="pages," /><category term="discussions," /><category term="static" /><category term="websites" /><summary type="html"><![CDATA[I added a commenting feature for the blog using giscus. Basically, it uses Github Discussions to store comments instead of storing it in its own database on the web server. Since this website is hosted on Github Pages and Pages only supports static websites, it cannot host its own databases to store things such as comments.]]></summary></entry></feed>
+</script>]]></content><author><name></name></author><category term="comments," /><category term="giscus," /><category term="github" /><category term="pages," /><category term="discussions," /><category term="static" /><category term="websites" /><summary type="html"><![CDATA[I added a commenting feature for the blog using giscus. Basically, it uses Github Discussions to store comments instead of storing it in its own database on the web server. Since this website is hosted on Github Pages and Pages only supports static websites, it cannot host its own databases to store things such as comments. This guide explains how to add giscus comments to statically-hosted websites, and some quirks and caveats with using Github Discussions as a database for your comments.]]></summary></entry></feed>
