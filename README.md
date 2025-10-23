@@ -1,6 +1,6 @@
 # de-soot.github.io
 
-A place on the internet where I write about my write about things that interest me.
+A place on the Internet where I write about stuff.
 
 ## Usage
 
