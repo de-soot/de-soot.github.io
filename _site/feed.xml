@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-25T22:52:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-23T13:02:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
 
 <h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
 
@@ -120,6 +120,13 @@
 
 <p>which works because even though the title (<code class="language-plaintext highlighter-rouge">.TL</code>) is required, it stops at the abstract (<code class="language-plaintext highlighter-rouge">.AB</code>, which ends at <code class="language-plaintext highlighter-rouge">.AE</code>; the <code class="language-plaintext highlighter-rouge">no</code> argument suppresses the “Abstract” heading).</p>
 
+<h2 id="suppress-page-headers-">Suppress Page Headers <a name="suppressheader"></a></h2>
+
+<p>If instead you want to <strong>not</strong> have any page headers (including page numbering) for reasons such as plagerism report checkers potentially producing errors, disabling automatic page numbering is as easy as defining the central header to be empty:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds CH
+</code></pre></div></div>
+
 <h1 id="font-">Font <a name="font"></a></h1>
 
 <p>Many lecturers demand assignments to be submitted in double-spaced Times New Roman in 12 point size. This section covers how to change the font family, size, style, and line spacing.</p>
@@ -238,7 +245,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 .  SH
 .  ce
 .  nop \&amp;\\*[REFERENCES]
-.\"  sp
+.\"  sp 2
 .\"  nr PS 12
 .  par@reset
 ..
@@ -249,7 +256,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <ul>
   <li>To make the heading centered, put <code class="language-plaintext highlighter-rouge">.ce</code> above where the heading is rendered (<code class="language-plaintext highlighter-rouge">.nop \%\\*[REFERENCES]</code>).</li>
   <li>(Optional) <code class="language-plaintext highlighter-rouge">.nr PS 14</code> above it increases the font size to 14pt, just remember to reset it back to normal (12pt) with <code class="language-plaintext highlighter-rouge">.nr PS 12</code> after.</li>
-  <li>(Optional) <code class="language-plaintext highlighter-rouge">.sp</code> adds an extra line of space below it.</li>
+  <li>(Optional) <code class="language-plaintext highlighter-rouge">.sp 2</code> adds two extra lines of space below the heading.</li>
 </ul>
 
 <h2 id="space-between-entries-">Space Between Entries <a name="spacebetweenentries"></a></h2>
@@ -366,8 +373,8 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 .ds ref*spec!J     ".  " " "\fI"    "\fP"
 .ds ref*spec!N     """ "(" ""       ")"
 .ds ref*spec!O     ".  " "
-.ds ref*spec!P     ",  " " "p.\~"
-.ds ref*spec!PP    ",  " " "pp.\~"
+.ds ref*spec!P     ",  " " "\~"
+.ds ref*spec!PP    ",  " " "\~"
 .ds ref*spec!T     ".  " "
 .ds ref*spec!T:0   ".  " "
 .ds ref*spec!T:2   ".  " "
@@ -383,6 +390,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
   <li>In both the <code class="language-plaintext highlighter-rouge">.ds ref*spec!T:0</code> and <code class="language-plaintext highlighter-rouge">.ds ref*spec!T:2</code> rows, <code class="language-plaintext highlighter-rouge">\fI</code> in <code class="language-plaintext highlighter-rouge">arg 3</code> and <code class="language-plaintext highlighter-rouge">\fP</code> in <code class="language-plaintext highlighter-rouge">arg 5</code> are removed to not italicise the text and because of redundancy (<code class="language-plaintext highlighter-rouge">\fP</code> resets font style back to the previous style), respectively.</li>
   <li>In the <code class="language-plaintext highlighter-rouge">.ds ref*spec!V</code> row, its <code class="language-plaintext highlighter-rouge">arg 1</code> is changed from empty (<code class="language-plaintext highlighter-rouge">""</code>) to a comma (<code class="language-plaintext highlighter-rouge">,</code>) to add a comma after the journal/periodical field; its <code class="language-plaintext highlighter-rouge">arg 3</code> is changed from bold-ing (<code class="language-plaintext highlighter-rouge">\fI</code>) to italicising (<code class="language-plaintext highlighter-rouge">\fB</code>) the text.</li>
   <li>All <code class="language-plaintext highlighter-rouge">\fP</code> in <code class="language-plaintext highlighter-rouge">arg 5</code> are moved to <code class="language-plaintext highlighter-rouge">arg 4</code> to make sure the punctuations after each field are not in bold or italics.</li>
+  <li>When numbering pages, APA does not denote with <code class="language-plaintext highlighter-rouge">p.</code> for single pages or <code class="language-plaintext highlighter-rouge">pp.</code> for page ranges, so they were removed in their respective rows.</li>
 </ul>
 
 <h3 id="period-suppression-">Period Suppression <a name="periodsuppression"></a></h3>
