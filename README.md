@@ -21,7 +21,7 @@ gem install jekyll bundler
 ```
 4) Now that everything's installed and good to go, navigate the terminal to the directory where the you downloaded the copy of the Github repository, like so:
 ```sh
-cd "{Path of source code folder}"
+cd [Path of source code folder]
 ```
 5) Enter this command:
 ```sh
