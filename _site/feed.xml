@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-23T13:02:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-04T17:22:50+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Hosted on Github Pages</subtitle><entry><title type="html">Guide to APA with groff ms and refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms and refer" /><published>2025-02-07T00:00:00+08:00</published><updated>2025-02-07T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<p>This guide explains why and how I used groff with the ms and refer macros to write my college essay in Neovim.</p>
 
 <h1 id="table-of-contents-">Table of Contents <a name="tableofcontents"></a></h1>
 
@@ -141,17 +141,17 @@
 
 <p>This is how to change it to device’s default <a href="https://www.gnu.org/software/groff/manual/groff.html.node/Font-Families.html">sans-serif</a>,</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam H \" Helvetica
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds FAM H \" Helvetica
 </code></pre></div></div>
 
 <p>monospace,</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam C \" Courier
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds FAM C \" Courier
 </code></pre></div></div>
 
 <p>and (back to) serif font family:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.fam T \" Times New Roman
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.ds FAM T \" Times New Roman
 </code></pre></div></div>
 
 <p>There are many other default fonts in groff listed in <a href="https://technicallywewrite.com/2024/04/12/changefonts">this post</a>.</p>
