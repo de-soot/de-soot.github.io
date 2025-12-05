@@ -1,6 +1,6 @@
 # de-soot.github.io
 
-A place on the Internet where I write about stuff.
+Personal website where I write technical blog posts.
 
 ## Usage
 
