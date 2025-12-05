@@ -1,6 +1,6 @@
 # de-soot.github.io
 
-Technical blogsite.
+Personal website where I write technical blog posts.
 
 ## Usage
 
