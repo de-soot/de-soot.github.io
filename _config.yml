@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: de_soot
-github_username:  de-soot
-description: Hosted on Github Pages
+github_username: de-soot
+description: Technical blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://de-soot.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: de-soot.github.io
