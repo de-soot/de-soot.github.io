@@ -21,8 +21,11 @@ If we flip all the bits of `x` using the bitwise NOT operator (`~`), we get a ne
 We will call this new number `~x`, where `x + ~x = 2^n - 1`, since 2^n - 1 has all `n` number of bits set to `1`.
 
 Rearranging the above equation for `x`, we get `x = (2^n - 1) - ~x`.
-It is then easy to find that `-x = -(2^n - 1 - ~x) = -2^n + 1 + ~x`.
-Now see the picture of where "flip the bits and add one" comes from.
+It is then easy to find that
+
+`-x = -(2^n - 1 - ~x) = -2^n + 1 + ~x`.
+
+Now start to see the picture of where "flip the bits and add one" comes from.
 
 But we cannot just flip bits and add 1 to get `-x` with ordinary bits, that would just be `~x + 1`.
 We are still missing the `-2^n` in the equation, but how would we get that?
