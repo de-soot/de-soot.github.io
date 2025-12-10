@@ -39,3 +39,20 @@ When we flip the bits of `x`, this new bit we added will also get flipped along 
 Putting all the pieces together, we get that for a number `x` represented by `n` bits (with an extra bit having a place value of `-2^n`) where `x = (2^n - 1) - ~x`, you would need to flip its bits and add one to get `-2^n + ~x + 1 = -x`.
 
 Hopefully after reading this, you will have gained a better understanding of using 2's complement for converting binary numbers to negative.
+
+<script src="https://giscus.app/client.js"
+        data-repo="de-soot/de-soot.github.io"
+        data-repo-id="R_kgDOK6_5tA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK6_5tM4CflCT"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
