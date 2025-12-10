@@ -28,5 +28,5 @@ cd [Path of source code folder]
 bundle exec jekyll serve
 ```
 6. Navigate to http://localhost:4000 in a browser.
-7. Add your own Markdown posts inside `_posts`.
+7. Add your own Markdown posts inside the `_posts` folder.
 8. Profit!
