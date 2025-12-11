@@ -7,19 +7,19 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Dark Mode without Javascript" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This guide explains why and how to easily make a dark theme for your website using CSS @media queries." />
-<meta property="og:description" content="This guide explains why and how to easily make a dark theme for your website using CSS @media queries." />
-<link rel="canonical" href="http://localhost:4000/dark-mode" />
-<meta property="og:url" content="http://localhost:4000/dark-mode" />
+<meta name="description" content="Alternative title: System default theme for webpages" />
+<meta property="og:description" content="Alternative title: System default theme for webpages" />
+<link rel="canonical" href="https://de-soot.github.io/dark-mode" />
+<meta property="og:url" content="https://de-soot.github.io/dark-mode" />
 <meta property="og:site_name" content="de_soot" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-09-07T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Dark Mode without Javascript" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"This guide explains why and how to easily make a dark theme for your website using CSS @media queries.","headline":"Dark Mode without Javascript","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dark-mode"},"url":"http://localhost:4000/dark-mode"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-07T00:00:00+08:00","datePublished":"2024-09-07T00:00:00+08:00","description":"Alternative title: System default theme for webpages","headline":"Dark Mode without Javascript","mainEntityOfPage":{"@type":"WebPage","@id":"https://de-soot.github.io/dark-mode"},"url":"https://de-soot.github.io/dark-mode"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="de_soot" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://de-soot.github.io/feed.xml" title="de_soot" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">de_soot</a><nav class="site-nav">
@@ -47,28 +47,26 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>This guide explains why and how to easily make a dark theme for your website using CSS <code class="language-plaintext highlighter-rouge">@media</code> queries.</p>
+    <p>Alternative title: System default theme for webpages</p>
 
-<p>Alternative title: System default theme for websites</p>
-
-<h1 id="why-dark-mode">Why Dark Mode</h1>
+<h2 id="why-dark-mode">Why Dark Mode</h2>
 
 <p>For users visiting a website in a dark room at night, it would be less straining for their eyes if the webpage was displayed in a darker colour to match the environment, which is what <a href="https://en.wikipedia.org/wiki/Light-on-dark_color_scheme">dark mode</a> does.</p>
 
 <p><img src="https://zerowidthjoiner.net/uploads/2020/04-11/light-vs-dark.png" alt="Comparison image of light theme on the left and dark theme on the right." /></p>
 
-<h1 id="how-to-do-it">How to do it</h1>
+<h2 id="how-to-do-it">How to do it</h2>
 
 <p>From <a href="https://developer.mozilla.org/en-US">MDN Web Docs</a>:</p>
 <blockquote>
   <p>The @media <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule">at-rule</a> can be used to apply part of a <a href="https://en.wikipedia.org/wiki/Style_sheet_(web_development)">style sheet</a> based on the result of one or more media queries. With it, you specify a media query and a block of CSS to apply to the document if and only if the media query matches the device on which the content is being used.</p>
 </blockquote>
 
-<h2 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h2>
+<h3 id="for-non-static-site-generator-websites">For Non-Static-Site-Generator Websites</h3>
 
 <p>There is also a <a href="https://youtu.be/g85LQVp0hGM">video guide by Eric Murphy on Youtube</a> if you prefer to follow along with a video.</p>
 
-<h3 id="external-style-sheet">External Style Sheet</h3>
+<h4 id="external-style-sheet">External Style Sheet</h4>
 
 <p>To separate code between HTML and CSS, link an external CSS style sheet in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> tag in the HTML document. Like so:</p>
 
@@ -95,7 +93,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="with-the-style-html-tag">With the &lt;style&gt; HTML tag</h3>
+<h4 id="with-the-style-html-tag">With the &lt;style&gt; HTML tag</h4>
 
 <p>You can also type out your CSS code in between <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tags if you prefer everything to be contained in one HTML document:</p>
 
@@ -119,7 +117,7 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<h2 id="for-static-site-generator-websites">For Static Site Generator Websites</h2>
+<h3 id="for-static-site-generator-websites">For Static Site Generator Websites</h3>
 
 <p>It is a little bit less straightforward to do this with static site generators like Jekyll (which is what this website uses) or Hugo, as you have to override the theme’s CSS style sheet.</p>
 
@@ -148,7 +146,7 @@
 
 <p>For other static site generator websites, you can refer to the official documentation found online for information on how to override your theme’s style-sheet.</p>
 
-<h1 id="configure-giscus-theme">Configure Giscus Theme</h1>
+<h2 id="configure-giscus-theme">Configure Giscus Theme</h2>
 
 <p>To set <code class="language-plaintext highlighter-rouge">giscus</code> comments to match the website if you have done the CSS <code class="language-plaintext highlighter-rouge">@media</code> trick shown above, simply set the <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>’s <code class="language-plaintext highlighter-rouge">data-theme</code> attribute value to <code class="language-plaintext highlighter-rouge">"preferred_color_scheme"</code> as shown below.</p>
 
@@ -163,7 +161,7 @@
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>If you found this blog post useful, leave a comment down below! Also check out how to add <code class="language-plaintext highlighter-rouge">giscus</code> comments to your own website on my <a href="/giscus-comments">previous guide for it</a>.</p>
 
