@@ -6,13 +6,15 @@ categories: comments, giscus, github pages, github discussions, static websites
 permalink: /giscus-comments
 ---
 
+## Preamble
+
 I added a commenting feature for the blog using [giscus][giscus]. Basically, it uses [Github Discussions][discussions-docs] to store comments instead of storing it in its own database on the web server. Since this website is hosted on [Github Pages][pages-docs] and Pages only supports static websites, it cannot host its own databases to store things such as comments. This guide explains how to add giscus comments to statically-hosted websites, and some quirks and caveats with using Github Discussions as a database for your comments.
 
-# Try it
+## Try it
 
 You can test it out yourself on this blog post in the comments below by signing into your Github account and commenting, or you can comment on the [Github Discussions post](https://github.com/de-soot/de-soot.github.io/discussions/22) directly and it will show up on the comments section on the website similarly.
 
-# Add it to your own Github Pages website
+## Add it to your own Github Pages website
 
 1) Make sure to enable Github Discussions on your website's Github repository.
 
@@ -20,7 +22,7 @@ You can test it out yourself on this blog post in the comments below by signing 
 
 3) After you have done so, you can simply copy and paste it into your webpage!
 
-# Note
+## Note
 
 Giscus finds and links the comments to the Github Discussions by searching through and matching URLs, path names, titles, and other such metadata. If you try to change a page's title without editing the associated Github Discussion accordingly, it may lead to giscus not being able to find and link it to the Github Discussion (this is especially noticible if you set the `<script>`'s `data-strict` attribute value to `"1"`), and hence Giscus will create a new Github Discussion.
 
