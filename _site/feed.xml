@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://de-soot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://de-soot.github.io/" rel="alternate" type="text/html" /><updated>2025-12-11T18:42:53+08:00</updated><id>https://de-soot.github.io/feed.xml</id><title type="html">de_soot</title><subtitle>Technical blog</subtitle><entry><title type="html">2nd Difference Formula Proof</title><link href="https://de-soot.github.io/2nd-diff" rel="alternate" type="text/html" title="2nd Difference Formula Proof" /><published>2025-12-10T00:00:00+08:00</published><updated>2025-12-10T00:00:00+08:00</updated><id>https://de-soot.github.io/2nd-diff</id><content type="html" xml:base="https://de-soot.github.io/2nd-diff"><![CDATA[<h2 id="1-preamble">1. Preamble<a name="preamble"></a></h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-01-01T13:09:22+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">de_soot</title><subtitle>Technical blog</subtitle><entry><title type="html">2nd Difference Derivation &amp;amp; Proof</title><link href="http://localhost:4000/2nd-diff" rel="alternate" type="text/html" title="2nd Difference Derivation &amp;amp; Proof" /><published>2025-12-10T00:00:00+08:00</published><updated>2025-12-10T00:00:00+08:00</updated><id>http://localhost:4000/2nd-diff</id><content type="html" xml:base="http://localhost:4000/2nd-diff"><![CDATA[<h2 id="1-introduction">1. Introduction<a name="intro"></a></h2>
 
-<p>During junior high school, I was introduced to a formula for finding the n<sup>th</sup> term of a certain sequence with a second difference that went something like:</p>
+<p>During a math class in junior high school, I was introduced to a formula for finding the n<sup>th</sup> term of a certain sequence with a constant second difference that went something like:</p>
 
 <p>T<sub>n</sub> = 1/2(n)<sup>2</sup> - 1/2(n) + 1, for a sequence <code class="language-plaintext highlighter-rouge">1, 2, 4, 7 ...</code> and n &gt;= 1.</p>
 
-<p>At first, the formula seemed quite random (similar to the quadratic formula) and I could not wrap my head around it at the time.</p>
+<p>The teacher never really explained it though, so it was just a mysterious formula to me at the time.</p>
 
-<p>I wondered how adding a second difference could make the trivial arithmetic formula so complex, and I was inspired by a textbook I was reading (“Concrete Mathematics” by Donald Knuth), so I tried to derive the formula myself.
-I also did not like to use things I did not understand, and there is no better way to understand something than to make it yourself from scratch.</p>
-
-<p>I wrote this blog post to share in hopes that someone may find it useful.</p>
+<p>Later in college, I was inspired by a textbook I was reading (Chapter 1 of Concrete Mathematics by Donald Knuth on Recurrence Relations) and remembered the mysterious formula, so I tried to derive it myself to better understand it.</p>
 
 <h2 id="2-what-is-a-2nd-difference">2. What is a 2<sup>nd</sup> Difference?</h2>
 
 <p>Say there is a sequence <code class="language-plaintext highlighter-rouge">1, 2, 4, 7 ...</code>.
 You may have come across quite a few of these types of sequences on IQ tests and whatnot, and it is easy to find that the fifth term is 11 and so on.</p>
 
-<p>However, it is obvious at a glance that the sequence does not follow the familiar arithmetic or geometric formulas, so we cannot yet find an arbitrary n<sup>th</sup> term of the sequence without knowing the previous terms.
-Finding the general formula for this will be the goal of this derivation.</p>
+<p>However, it is obvious at a glance that the sequence does not follow the familiar formulas for finding the n<sup>th</sup> term of arithmetic or geometric sequences, so we cannot yet find an arbitrary n<sup>th</sup> term of the sequence without first knowing the previous terms.
+Finding the general closed-form solution for this will be the goal of this derivation.</p>
 
 <p>The difference or ratio between every term and its subsequent term is not constant, unlike what is needed for a+(n-1)d or ar<sup>n-1</sup> to work properly.
-Instead, the difference (which we will now call the ‘first difference’) increases by a constant amount as the sequence goes on.</p>
+Instead, the difference (which we will call the ‘first difference’) increases by a constant amount as the sequence goes on.</p>
 
 <p>We can see this clearly if we construct a new sequence from the first differences:</p>
 
@@ -36,15 +33,15 @@ Instead, the difference (which we will now call the ‘first difference’) incr
 
 <p><code class="language-plaintext highlighter-rouge">1, 2, 3 ...</code>.</p>
 
-<p>Unlike the original sequence, it is easy to see that this sequence has a constant difference of one, so the n<sup>th</sup> term can be found using the familiar formula (albeit with some notation modifications):</p>
+<p>Unlike the original sequence, it is easy to see that this sequence has a constant difference of one, so the n<sup>th</sup> term can be found using the familiar formula (albeit with some modifications to notation):</p>
 
 <p>(d<sub>1</sub>)<sub>n</sub> = a<sub>2</sub> + (n - 1)d<sub>2</sub>, for n &gt;= 1,</p>
 
-<p>where (d<sub>1</sub>)<sub>n</sub> is the n<sup>th</sup> first difference, a<sub>2</sub> is the first term of the sequence of first differences (a<sub>1</sub> would be the first term of the original sequence), and d<sub>2</sub> is the difference for the sequence of first differences (or the second difference).</p>
+<p>where (d<sub>1</sub>)<sub>n</sub> is the n<sup>th</sup> first difference, a<sub>2</sub> is the first term of the sequence of first differences (a<sub>1</sub> would be the first term of the original sequence), and d<sub>2</sub> is the constant difference between each term in the sequence of first differences (which we will call the ‘second difference’).</p>
 
 <h2 id="3-derivation-of-the-formula">3. Derivation of the Formula</h2>
 
-<p>Using the approach we naturally used to find that 11 was the fifth term in the original sequence earlier, we can model the sequence as a recursive problem:</p>
+<p>Taking inspiration from how we intuitively found that 11 was the fifth term in the original sequence earlier, we model the sequence as a recurrence problem:</p>
 
 <p>T<sub>1</sub> = a<sub>1</sub>;</p>
 
@@ -56,13 +53,13 @@ Instead, the difference (which we will now call the ‘first difference’) incr
 
 <p>so it is</p>
 
-<p>(d<sub>1</sub>)<sub>n</sub> = T<sub>n+1</sub> - T<sub>n</sub></p>
+<p>(d<sub>1</sub>)<sub>n</sub> = T<sub>n+1</sub> - T<sub>n</sub>,</p>
 
 <p>and not</p>
 
 <p>(d<sub>1</sub>)<sub>n</sub> = T<sub>n</sub> - T<sub>n-1</sub>.</p>
 
-<p>Moving on, we expand—or “unfold”—the recursive formula to try and spot some patterns we could use to find a closed-form solution:</p>
+<p>Moving on: we expand—or “unfold”—the recursive formula to try and spot some patterns we could use to find a closed-form solution:</p>
 
 <p>T<sub>n</sub> = T<sub>n-1</sub> + (d<sub>1</sub>)<sub>n-1</sub></p>
 
@@ -133,16 +130,32 @@ We can test it against the earlier sequence that we used as an example (<code cl
 
 <p>= 1/2(n)<sup>2</sup> - 1/2(n) + 1.</p>
 
-<p>Which matches what I wrote on the <a href="/2nd-diff#preamble">preamble</a>.
-You can try out a few examples to check for any counter-examples, but you will not know for certain if it will always be correct unless you prove it, which will be talked about in the next section.</p>
+<p>Which matches what I wrote in the <a href="/2nd-diff#intro">introduction</a>.
+You can try out a few examples to check for any counter-examples, but you will not know for certain if it will always be correct unless you prove it, which is what we will do in the next section.</p>
 
 <h2 id="4-proof-by-mathematical-induction">4. Proof by Mathematical Induction</h2>
 
 <p>Continuing from the previous section: the derivation makes sense, and we can try a few examples, but how do we know for sure that there is no counter-example somewhere we did not check?
 We need to be mathematically rigorous to show our formula will always work.</p>
 
-<p>Fortunately, there is a convenient method called “proof by induction” that fits nicely for our sequences situation.
-If we show that our formula is true for a base case and also that it is true for any n if it was true for (n - 1), we can confidently conclude that the formula is true for all n.</p>
+<p>Fortunately, there is a convenient method called “proof by induction” that fits nicely into our sequences situation.
+If we show that our formula is true for a base case and also that it is true for any n if it was true for (n - 1), we can confidently conclude that the formula is true for all positive integer n.</p>
+
+<h3 id="42-base-case">4.2 Base Case<a name="base"></a></h3>
+
+<p>Plugging in the formula for T<sub>1</sub>:</p>
+
+<p>T<sub>1</sub> = a<sub>1</sub> + (n - 1)a<sub>2</sub> + 1/2(n - 2)(n - 1)d<sub>2</sub></p>
+
+<p>= a<sub>1</sub> + (1 - 1)a<sub>2</sub> + 1/2(1 - 2)(1 - 1)d<sub>2</sub>, for n = 1</p>
+
+<p>= a<sub>1</sub> + (0)a<sub>2</sub> + 1/2(-1)(0)d<sub>2</sub>, for n = 1</p>
+
+<p>= a<sub>1</sub> + 0 + 0</p>
+
+<p>= a<sub>1</sub>.</p>
+
+<p>Which matches our definition, hence proving that the formula is true for n = 1.</p>
 
 <h3 id="41-induction-step">4.1 Induction Step<a name="step"></a></h3>
 
@@ -186,29 +199,12 @@ If we show that our formula is true for a base case and also that it is true for
 
 <p>= a<sub>1</sub> + (n - 1)a<sub>2</sub> + 1/2(n - 2)(n - 1)d<sub>2</sub></p>
 
-<p>That matches our formula, and hence proves that the formula will hold true for any n if (n - 1) is true.
-However, we are still missing our base case (n = 1), which is covered in the next subsection.</p>
+<p>That matches our formula, and hence proves that the formula will hold true for any n if (n - 1) is true.</p>
 
-<h3 id="42-base-case">4.2 Base Case</h3>
+<h3 id="43-conclusion">4.3 Conclusion</h3>
 
-<p>Plugging in the formula for T<sub>1</sub>:</p>
-
-<p>T<sub>1</sub> = a<sub>1</sub> + (n - 1)a<sub>2</sub> + 1/2(n - 2)(n - 1)d<sub>2</sub></p>
-
-<p>= a<sub>1</sub> + (1 - 1)a<sub>2</sub> + 1/2(1 - 2)(1 - 1)d<sub>2</sub>, for n = 1</p>
-
-<p>= a<sub>1</sub> + (0)a<sub>2</sub> + 1/2(-1)(0)d<sub>2</sub>, for n = 1</p>
-
-<p>= a<sub>1</sub> + 0 + 0</p>
-
-<p>= a<sub>1</sub>.</p>
-
-<p>Which matches our definition, and hence proves that the formula is true for n = 1.
-Combining that with the earlier <a href="/2nd-diff#step">induction step</a>, we get that it is also true for n = 2, n - 1 = 1.
-Then that also shows that the formula is true for n = 3, n - 1 = 2.
-This then continues on infinitely, which shows that our formula holds true for any n.</p>
-
-<p>QED.</p>
+<p>Combining the <a href="/2nd-diff#base">base case</a> with the <a href="/2nd-diff#step">induction step</a>, we get that it is also true for n = 2 (as it is true for n = 1), which also shows that the formula is true for n = 3 (as it is true for n = 2) and so on.
+This continues infinitely, showing our formula holds true for any positive integer n. QED.</p>
 
 <h2 id="5-conclusion">5. Conclusion</h2>
 
@@ -216,7 +212,7 @@ This then continues on infinitely, which shows that our formula holds true for a
 Hopefully after reading through all that, you have gained a better understanding of how sequences with 2<sup>nd</sup> differences work.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="math," /><category term="2nd" /><category term="difference," /><category term="second" /><category term="proof," /><category term="derivation," /><category term="recursion," /><category term="closed-form" /><category term="solution" /><summary type="html"><![CDATA[1. Preamble]]></summary></entry><entry><title type="html">2’s Complement Derivation</title><link href="https://de-soot.github.io/2s-complement" rel="alternate" type="text/html" title="2’s Complement Derivation" /><published>2025-12-08T00:00:00+08:00</published><updated>2025-12-08T00:00:00+08:00</updated><id>https://de-soot.github.io/2s-complement</id><content type="html" xml:base="https://de-soot.github.io/2s-complement"><![CDATA[<h2 id="preamble">Preamble</h2>
+</script>]]></content><author><name></name></author><category term="math," /><category term="constant" /><category term="2nd" /><category term="difference," /><category term="second" /><category term="proof," /><category term="derivation," /><category term="recurrence," /><category term="recursion," /><category term="closed-form" /><category term="solution," /><category term="nth" /><category term="term" /><summary type="html"><![CDATA[1. Introduction]]></summary></entry><entry><title type="html">2’s Complement Derivation</title><link href="http://localhost:4000/2s-complement" rel="alternate" type="text/html" title="2’s Complement Derivation" /><published>2025-12-08T00:00:00+08:00</published><updated>2025-12-08T00:00:00+08:00</updated><id>http://localhost:4000/2s-complement</id><content type="html" xml:base="http://localhost:4000/2s-complement"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>If you have ever taken CS in high school or college, you have probably been taught about how to represent negative numbers in binary using 2’s complement.</p>
 
@@ -253,7 +249,7 @@ When we flip the bits of <code class="language-plaintext highlighter-rouge">x</c
 <p>Hopefully after reading this, you will have gained a better understanding of using 2’s complement for converting binary numbers to negative.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="cs," /><category term="binary," /><category term="bits," /><category term="negative" /><category term="numbers," /><category term="derivation," /><category term="proof," /><category term="math," /><category term="2&apos;s" /><category term="complement" /><summary type="html"><![CDATA[Preamble]]></summary></entry><entry><title type="html">Guide to APA with groff ms &amp;amp; refer</title><link href="https://de-soot.github.io/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms &amp;amp; refer" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>https://de-soot.github.io/groff-apa</id><content type="html" xml:base="https://de-soot.github.io/groff-apa"><![CDATA[<h2 id="1-table-of-contents-">1. Table of Contents <a name="tableofcontents"></a></h2>
+</script>]]></content><author><name></name></author><category term="cs," /><category term="binary," /><category term="bits," /><category term="negative" /><category term="numbers," /><category term="derivation," /><category term="proof," /><category term="math," /><category term="2&apos;s" /><category term="complement" /><summary type="html"><![CDATA[Introduction]]></summary></entry><entry><title type="html">Guide to APA with groff ms &amp;amp; refer</title><link href="http://localhost:4000/groff-apa" rel="alternate" type="text/html" title="Guide to APA with groff ms &amp;amp; refer" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>http://localhost:4000/groff-apa</id><content type="html" xml:base="http://localhost:4000/groff-apa"><![CDATA[<h2 id="1-table-of-contents-">1. Table of Contents <a name="tableofcontents"></a></h2>
 
 <ol>
   <li>
@@ -694,7 +690,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <p>If you found this helpful in any way or have any questions, feel free to leave a comment below. Also read my <a href="/justify-text">previous guide</a> on how I justify and hyphenate the text on this website.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="groff," /><category term="ms," /><category term="refer," /><category term="macro," /><category term="tmac," /><category term="APA," /><category term="style" /><category term="guide," /><category term="pdf" /><summary type="html"><![CDATA[1. Table of Contents]]></summary></entry><entry><title type="html">Dark Mode without Javascript</title><link href="https://de-soot.github.io/dark-mode" rel="alternate" type="text/html" title="Dark Mode without Javascript" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>https://de-soot.github.io/dark-mode</id><content type="html" xml:base="https://de-soot.github.io/dark-mode"><![CDATA[<p>Alternative title: System default theme for webpages</p>
+</script>]]></content><author><name></name></author><category term="groff," /><category term="ms," /><category term="refer," /><category term="macro," /><category term="tmac," /><category term="APA," /><category term="style" /><category term="guide," /><category term="pdf" /><summary type="html"><![CDATA[1. Table of Contents]]></summary></entry><entry><title type="html">Dark Mode without Javascript</title><link href="http://localhost:4000/dark-mode" rel="alternate" type="text/html" title="Dark Mode without Javascript" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/dark-mode</id><content type="html" xml:base="http://localhost:4000/dark-mode"><![CDATA[<p>Alternative title: System default theme for webpages</p>
 
 <h2 id="why-dark-mode">Why Dark Mode</h2>
 
@@ -813,7 +809,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <p>If you found this blog post useful, leave a comment down below! Also check out how to add <code class="language-plaintext highlighter-rouge">giscus</code> comments to your own website on my <a href="/giscus-comments">previous guide for it</a>.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="site" /><category term="generators," /><category term="system" /><category term="default" /><category term="website," /><category term="webpage," /><category term="customisation" /><summary type="html"><![CDATA[Alternative title: System default theme for webpages]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="https://de-soot.github.io/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>https://de-soot.github.io/justify-text</id><content type="html" xml:base="https://de-soot.github.io/justify-text"><![CDATA[<h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
+</script>]]></content><author><name></name></author><category term="dark" /><category term="mode," /><category term="theme," /><category term="night" /><category term="colour" /><category term="scheme," /><category term="jekyll," /><category term="css," /><category term="github" /><category term="pages," /><category term="static" /><category term="site" /><category term="generators," /><category term="system" /><category term="default" /><category term="website," /><category term="webpage," /><category term="customisation" /><summary type="html"><![CDATA[Alternative title: System default theme for webpages]]></summary></entry><entry><title type="html">Justify and Hyphenate Text on Websites using CSS</title><link href="http://localhost:4000/justify-text" rel="alternate" type="text/html" title="Justify and Hyphenate Text on Websites using CSS" /><published>2024-09-07T00:00:00+08:00</published><updated>2024-09-07T00:00:00+08:00</updated><id>http://localhost:4000/justify-text</id><content type="html" xml:base="http://localhost:4000/justify-text"><![CDATA[<h2 id="for-static-site-generator-websites">For Static-Site-Generator Websites</h2>
 
 <p>It is a little bit less straightforward to follow this guide with static site generators like Jekyll (which is what this website also uses) or Hugo, you will have to override the theme’s CSS style sheet.</p>
 
@@ -879,7 +875,7 @@ join-authors " &amp; " ", " " &amp; " # Change default "and" to ampersand (&amp;
 <p>f you found this blog post useful, leave a comment down below! Also read how to add reactive dark-mode to your website in my <a href="/dark-mode">previous blog post</a>.</p>
 
 <script src="https://giscus.app/client.js" data-repo="de-soot/de-soot.github.io" data-repo-id="R_kgDOK6_5tA" data-category="Announcements" data-category-id="DIC_kwDOK6_5tM4CflCT" data-mapping="title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy" crossorigin="anonymous" async="">
-</script>]]></content><author><name></name></author><category term="justify," /><category term="text-align," /><category term="jekyll," /><category term="css," /><category term="static" /><category term="site" /><category term="generator" /><summary type="html"><![CDATA[For Static-Site-Generator Websites]]></summary></entry><entry><title type="html">Comments on Github Pages with giscus</title><link href="https://de-soot.github.io/giscus-comments" rel="alternate" type="text/html" title="Comments on Github Pages with giscus" /><published>2024-05-24T00:00:00+08:00</published><updated>2024-05-24T00:00:00+08:00</updated><id>https://de-soot.github.io/giscus-comments</id><content type="html" xml:base="https://de-soot.github.io/giscus-comments"><![CDATA[<h2 id="preamble">Preamble</h2>
+</script>]]></content><author><name></name></author><category term="justify," /><category term="text-align," /><category term="jekyll," /><category term="css," /><category term="static" /><category term="site" /><category term="generator" /><summary type="html"><![CDATA[For Static-Site-Generator Websites]]></summary></entry><entry><title type="html">Comments on Github Pages with giscus</title><link href="http://localhost:4000/giscus-comments" rel="alternate" type="text/html" title="Comments on Github Pages with giscus" /><published>2024-05-24T00:00:00+08:00</published><updated>2024-05-24T00:00:00+08:00</updated><id>http://localhost:4000/giscus-comments</id><content type="html" xml:base="http://localhost:4000/giscus-comments"><![CDATA[<h2 id="preamble">Preamble</h2>
 
 <p>I added a commenting feature for the blog using <a href="https://giscus.app">giscus</a>. Basically, it uses <a href="https://docs.github.com/en/discussions">Github Discussions</a> to store comments instead of storing it in its own database on the web server. Since this website is hosted on <a href="https://docs.github.com/en/pages">Github Pages</a> and Pages only supports static websites, it cannot host its own databases to store things such as comments. This guide explains how to add giscus comments to statically-hosted websites, and some quirks and caveats with using Github Discussions as a database for your comments.</p>
 

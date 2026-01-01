@@ -6,7 +6,7 @@ categories: cs, binary, bits, negative numbers, derivation, proof, math, 2's com
 permalink: /2s-complement
 ---
 
-## Preamble
+## Introduction
 
 If you have ever taken CS in high school or college, you have probably been taught about how to represent negative numbers in binary using 2's complement.
 
